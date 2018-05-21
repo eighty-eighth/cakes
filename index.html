@@ -37,6 +37,7 @@
         <a class="pitch__button-choose btn" href="#">Выбрать торт</a>
       </section>
 
+
       <section class="cakes">
         <h2 class="cakes__title">Наши торты</h2>
         <ul class="cakes__list">
@@ -100,6 +101,127 @@
         </ul>
       </section>
 
+
+      <section class="individual-order">
+        <h2 class="individual-order__title">Индивидуальный заказ</h2>
+        <b class="individual-order__tagline">Соберите торт в 3 шага</b>
+
+        <div class="order-step">
+          <h3 class="order-step__title">
+            <span class="order-step__title-number">01</span>Выберите начинку
+          </h3>
+          <div class="order-step__list">
+            <ul class="order-step__toggles-list">
+              <li class="order-step__toggle-item">Slide 1</li>
+              <li class="order-step__toggle-item">Slide 2</li>
+              <li class="order-step__toggle-item">Slide 3</li>
+              <li class="order-step__toggle-item">Slide 4</li>
+              <li class="order-step__toggle-item">Slide 5</li>
+            </ul>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Шоколадный ганаш">
+              <h4 class="order-step__tagline">Шоколадный ганаш</h4>
+              <p class="order-step__description">
+                Ароматный шоколадный бисквит, густой шоколадный крем &ndash;
+                самый шоколадный из всех возможных десертов!
+              </p>
+              <b class="order-step__price">1000 руб/кг</b>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-step">
+          <h3 class="order-step__title">
+            <span class="order-step__title-number">02</span>Размер
+          </h3>
+          <div class="order-step__list">
+            <ul class="order-step__toggles-list">
+              <li class="order-step__toggle-item">Slide 1</li>
+              <li class="order-step__toggle-item">Slide 2</li>
+              <li class="order-step__toggle-item">Slide 3</li>
+              <li class="order-step__toggle-item">Slide 4</li>
+            </ul>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Экскиз торта весом 1кг">
+              <p class="order-step__description">
+                17-18 см<br>
+                (1кг &ndash; 6 персон)
+              </p>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Экскиз торта весом 2кг">
+              <p class="order-step__description">
+                23-24 см<br>
+                (10&ndash;12 персон)
+              </p>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Экскиз торта весом 5кг">
+              <p class="order-step__description">
+                Два яруса 25 и 20 см<br>
+                (15&ndash;20 персон)
+              </p>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Экскиз торта весом 8кг">
+              <p class="order-step__description">
+                Три яруса 30,25 и 18 см<br>
+                (25&ndash;30 персон)
+              </p>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-step">
+          <h3 class="order-step__title">
+            <span class="order-step__title-number">03</span>Оформление
+          </h3>
+          <div class="order-step__list">
+            <ul class="order-step__toggles-list">
+              <li class="order-step__toggle-item">Slide 1</li>
+              <li class="order-step__toggle-item">Slide 2</li>
+              <li class="order-step__toggle-item">Slide 3</li>
+              <li class="order-step__toggle-item">Slide 4</li>
+              <li class="order-step__toggle-item">Slide 5</li>
+            </ul>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Фото Маршмэллоу">
+              <h4 class="order-step__tagline">Ягодное ассорти</h4>
+              <b class="order-step__price">700 руб/кг</b>
+              <button class="order-slider__button-choose btn">Выбрать</button>
+            </div>
+            <div class="order-step__item">
+              <img class="order-step__image" src="#" alt="Фото Маршмэллоу">
+              <h4 class="order-step__tagline">Маршмэллоу</h4>
+              <b class="order-step__price">600 руб/кг</b>
+              <button class="order-step__button-choose btn">Выбрать</button>
+            </div>
+          </div>
+        </div>
+
+        <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
+          <h3 class="individual-order-form__title">Ваш выбор</h3>
+          <div class="individual-order-form__group">
+            <label class="individual-order-form__label">Начинка</label>
+            <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+          </div>
+          <div class="individual-order-form__group">
+            <label class="individual-order-form__label">Размер</label>
+            <input class="individual-order-form__input" type="text" value="1 кг" disabled>
+          </div>
+          <div class="individual-order-form__group">
+            <label class="individual-order-form__label">Оформление</label>
+            <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
+          </div>
+          <button class="individual-order-form__button-submit btn" type="submit">Заказать торт</button>
+        </form>
+
+      </section>
     </main>
     <footer class="page-footer"></footer>
   </body>
