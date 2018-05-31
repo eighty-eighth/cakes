@@ -1,0 +1,19 @@
+.toggles-list {
+  @include list-reset;
+  display: flex;
+}
+
+.toggles-list__item {
+  width: 6px;
+  height: 6px;
+  margin-right: 5px;
+  font-size: 0;
+  background-color: $bgtoggle-color;
+  border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+  .toggles-list {
+    @include visually-hidden;
+  }
+}

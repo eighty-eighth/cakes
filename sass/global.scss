@@ -37,7 +37,6 @@
   font-style: normal;
   font-weight: 400;
   src: local("Intro Script R H2 Base"),
-    url("../fonts/Introscriptr-h2base.woff2") format("woff2"),
     url("../fonts/Introscriptr-h2base.woff") format("woff");
 }
 
@@ -48,7 +47,7 @@ body {
   font-style: normal;
   font-size: 14px;
   line-height: 18px;
-  font-family: "Circe", "Arial", sans-serif;
+  font-family: "Circe", "Tahoma", sans-serif;
   color: $textbrand-color;
   background-color: $bg-color;
 }

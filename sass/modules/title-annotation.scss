@@ -1,0 +1,36 @@
+.title-annotation {
+  margin: 0;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 400;
+  font-family: "Intro Script R H2 Base", "Georgia", serif;
+  color: $textannotation-color;
+}
+
+@media (min-width: $tablet-width) {
+  .title-annotation {
+    font-size: 26px;
+    line-height: 26px;
+
+    &--pitch {
+      font-size: 36px;
+      line-height: 36px;
+    }
+
+    &--contacts {
+      font-size: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title-annotation {
+    font-size: 35px;
+    line-height: 35px;
+
+    &--pitch {
+      font-size: 41px;
+      line-height: 41px;
+    }
+  }
+}
