@@ -1,11 +1,30 @@
+// ### Брекпоинты ###
 $tablet-width: 768px;
 $desktop-width: 1366px;
-$textbrand-color: #2d2829;
-$textbutton-color: #fefefe;
-$textsecondary-color: #ffffff;
-$textannotation-color: #32313d;
+
+
+// ##### Цветовая схема #####
+$white: #ffffff;
+$black: #000000;
+
+// ### цвета текста
 $brand-color: #f50049;
+$textbrand-color: #2d2829;
+$textprimary-color: $black;
+$textsecondary-color: $white;
+
+$textannotation-color: #32313d;
+$textbutton-color: #fefefe;
+$linkhover-color: $brand-color;
+$linkactive-color: rgba(245, 0, 73, 0.3);
+
+$textnav-color: #383838;
+
+// ### цвета бэкграундов
 $bg-color: #fbebea;
-$bgtoggle-color: #dddddd;
-$bglight-layer: #ffffff;
+$bglight-layer: $white;
 $bgdark-layer: #898989;
+
+$bgheader-color: $white;
+$bgnav-color: #e7e7e7;
+$bgtoggle-color: #dddddd;
