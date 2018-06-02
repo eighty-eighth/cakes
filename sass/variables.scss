@@ -15,16 +15,22 @@ $textsecondary-color: $white;
 
 $textannotation-color: #32313d;
 $textbutton-color: #fefefe;
+$textorder-color: #2f2f2f;
+
 $linkhover-color: $brand-color;
-$linkactive-color: rgba(245, 0, 73, 0.3);
+$linkactive-color: transparentize($brand-color, 0.7);
+$linkreviews-color: #f87b91;
 
 $textnav-color: #383838;
 
 // ### цвета бэкграундов
 $bg-color: #fbebea;
-$bglight-layer: $white;
+$bglight-layer: #e8e8e8;
 $bgdark-layer: #898989;
 
 $bgheader-color: $white;
 $bgnav-color: #e7e7e7;
 $bgtoggle-color: #dddddd;
+
+// ### цвета рамок
+$border-individualorder: #dddddd;

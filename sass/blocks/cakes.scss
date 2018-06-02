@@ -1,0 +1,50 @@
+.cakes__list {
+  @include list-reset;
+}
+
+.cakes__tagline {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.cakes__tagline-link {
+  text-decoration: none;
+  color: $textbrand-color;
+}
+
+.cakes__description {
+  @include transparentize-color($textbrand-color, 0.3);
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.cakes__item-link {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .cakes__item-link {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 12px;
+    text-decoration: none;
+    color: $textbrand-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .cakes__tagline {
+    font-size: 24px;
+    line-height: 24px;
+  }
+
+  .cakes__description {
+    font-size: 20px;
+    line-height: 12px;
+  }
+
+  .cakes__item-link {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}

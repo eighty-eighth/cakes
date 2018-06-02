@@ -40,6 +40,15 @@
     url("../fonts/Introscriptr-h2base.woff") format("woff");
 }
 
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+}
+
 body {
   min-width: 320px;
   margin: 0;

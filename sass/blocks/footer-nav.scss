@@ -1,0 +1,25 @@
+.footer-nav__menu {
+  @include list-reset;
+}
+
+.footer-nav__link {
+  font-family: "Roboto", "Tahoma", sans-serif;
+  text-decoration: none;
+  color: $textsecondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .footer-nav__link {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-nav__link {
+    font-size: 16px;
+    line-height: 32px;
+    font-family: "Circe", "Tahoma", sans-serif;
+    color: $textbrand-color;
+  }
+}

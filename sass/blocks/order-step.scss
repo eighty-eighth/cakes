@@ -1,0 +1,86 @@
+.order-step__title {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 700;
+  font-family: "Playfair Display", "Geargia", serif;
+  color: $brand-color;
+}
+
+.order-step__title-number {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.order-step__item {
+  color: $textorder-color;
+}
+
+.order-step__tagline {
+  font-size: 16px;
+  line-height: 16px;
+
+  &--decor {
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.order-step__price {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+@media (min-width: $tablet-width) {
+  .order-step__title {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .order-step__title-number {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .order-step__tagline {
+    font-size: 18px;
+    line-height: 18px;
+
+    &--decor {
+      font-size: 14px;
+    }
+  }
+
+  .order-step__price {
+    font-size: 20px;
+    line-height: 20px;
+
+    &--decor {
+      font-size: 14px;
+      line-height: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order-step__title {
+    font-size: 27px;
+    line-height: 29px;
+  }
+
+  .order-step__title-number {
+    font-size: 58px;
+    line-height: 58px;
+  }
+
+  .order-step__tagline {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .order-step__price {
+    font-size: 22px;
+    line-height: 22px;
+  }
+}

@@ -1,0 +1,10 @@
+.duties__text {
+  color: $textprimary-color;
+}
+
+@media (min-width: $desktop-width) {
+  .duties__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

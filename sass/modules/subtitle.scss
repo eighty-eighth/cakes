@@ -6,10 +6,6 @@
   font-family: "Playfair Display", "Georgia", serif;
   color: $textbrand-color;
 
-  &--individual-order-form {
-    font-size: 22px;
-  }
-
   &--about-us,
   &--features,
   &--duties {
@@ -27,11 +23,6 @@
     font-size: 28px;
     line-height: 39px;
 
-    &--individual-order-form {
-      font-size: 18px;
-      line-height: 40px;
-    }
-
     &--reviews {
       line-height: 34px;
     }
@@ -48,10 +39,6 @@
   .subtitle {
     font-size: 40px;
     line-height: 66px;
-
-    &--individual-order-form {
-      font-size: 27px;
-    }
 
     &--about-us,
     &--features,

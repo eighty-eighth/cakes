@@ -1,0 +1,46 @@
+.reviews-item {
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+}
+
+.reviews-item__user-name {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.reviews-item__link {
+  font-style: italic;
+  color: $linkreviews-color;
+}
+
+.reviews-item__counter {
+  color: $brand-color;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews-item {
+    font-size: 14px;
+    line-height: 14px;
+    text-align: left;
+  }
+
+  .reviews-item__user-name {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews-item {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .reviews-item__user-name {
+    font-size: 27px;
+  }
+
+  .reviews-item__user-info {
+    font-size: 20px;
+  }
+}

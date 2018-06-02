@@ -1,0 +1,28 @@
+.page-footer {
+  background-color: $bgdark-layer;
+}
+
+.page-footer__logo {
+  font-size: 28px;
+  line-height: 44px;
+  font-weight: 700;
+  font-family: "Playfair Display", "Georgia", serif;
+  color: $textsecondary-color;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__logo {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer {
+    background-color: $bglight-layer;
+  }
+
+  .page-footer__logo {
+    font-size: 28px;
+    color: $textbrand-color;
+  }
+}
