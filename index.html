@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=devaice-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.min.css">
     <title>Вкусные тортики</title>
   </head>
   <body class="page-body">
@@ -11,20 +12,32 @@
       <nav class="main-nav">
         <button class="main-nav__toogle">Открыть меню</button>
         <ul class="main-nav__menu">
-          <li class="main-nav__item"><a class="main-nav__link">Наши торты</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Индивидуальный заказ</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Отзывы</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">О нас</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Как заказать</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Контакты</a></li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Наши торты</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Индивидуальный заказ</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Отзывы</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">О нас</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Как заказать</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Контакты</a>
+          </li>
         </ul>
       </nav>
       <b class="page-header__contact-phone">+7 906 899 92 96</b>
     </header>
     <main class="page-main">
       <section class="pitch">
-        <h1 class="page-title">Торты на заказ</h1>
-        <span class="pitch__tagline">Ручная работа</span>
+        <h1 class="pitch__title title">Торты на заказ</h1>
+        <div class="pitch__title-annotation title-annotation title-annotation--pitch">Ручная работа</div>
         <ul class="pitch__offers-list">
           <li class="pitch__offer-item">
             Натуральные ингредиенты
@@ -34,12 +47,12 @@
             от 2000 рублей*
           </li>
         </ul>
-        <a class="pitch__button-choose btn" href="#">Выбрать торт</a>
+        <a class="pitch__button-choose button" href="#">Выбрать торт</a>
       </section>
 
 
       <section class="cakes">
-        <h2 class="cakes__title">Наши торты</h2>
+        <h2 class="cakes__title subtitle">Наши торты</h2>
         <ul class="cakes__list">
           <li class="cakes__item">
             <img class="cakes__image" alt="Классические торты">
@@ -103,8 +116,8 @@
 
 
       <section class="individual-order">
-        <h2 class="individual-order__title">Индивидуальный заказ</h2>
-        <b class="individual-order__tagline">Соберите торт в 3 шага</b>
+        <h2 class="individual-order__title subtitle">Индивидуальный заказ</h2>
+        <div class="individual-order__tagline title-annotation">Соберите торт в 3 шага</div>
 
         <div class="order-step">
           <h3 class="order-step__title">
@@ -126,7 +139,7 @@
                 самый шоколадный из всех возможных десертов!
               </p>
               <b class="order-step__price">1000 руб/кг</b>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button button--individual-order">Выбрать</button>
             </div>
           </div>
         </div>
@@ -148,7 +161,7 @@
                 17-18 см<br>
                 (1кг &ndash; 6 персон)
               </p>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button">Выбрать</button>
             </div>
             <div class="order-step__item">
               <img class="order-step__image" src="#" alt="Экскиз торта весом 2кг">
@@ -156,7 +169,7 @@
                 23-24 см<br>
                 (10&ndash;12 персон)
               </p>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button">Выбрать</button>
             </div>
             <div class="order-step__item">
               <img class="order-step__image" src="#" alt="Экскиз торта весом 5кг">
@@ -164,7 +177,7 @@
                 Два яруса 25 и 20 см<br>
                 (15&ndash;20 персон)
               </p>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button">Выбрать</button>
             </div>
             <div class="order-step__item">
               <img class="order-step__image" src="#" alt="Экскиз торта весом 8кг">
@@ -172,7 +185,7 @@
                 Три яруса 30,25 и 18 см<br>
                 (25&ndash;30 персон)
               </p>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button">Выбрать</button>
             </div>
           </div>
         </div>
@@ -191,15 +204,15 @@
             </ul>
             <div class="order-step__item">
               <img class="order-step__image" src="#" alt="Фото Маршмэллоу">
-              <h4 class="order-step__tagline">Ягодное ассорти</h4>
+              <h4 class="order-step__tagline order-step__tagline--decor">Ягодное ассорти</h4>
               <b class="order-step__price">700 руб/кг</b>
-              <button class="order-slider__button-choose btn">Выбрать</button>
+              <button class="order-slider__button-choose button">Выбрать</button>
             </div>
             <div class="order-step__item">
               <img class="order-step__image" src="#" alt="Фото Маршмэллоу">
-              <h4 class="order-step__tagline">Маршмэллоу</h4>
+              <h4 class="order-step__tagline order-step__tagline--decor">Маршмэллоу</h4>
               <b class="order-step__price">600 руб/кг</b>
-              <button class="order-step__button-choose btn">Выбрать</button>
+              <button class="order-step__button-choose button">Выбрать</button>
             </div>
           </div>
         </div>
@@ -218,18 +231,18 @@
             <label class="individual-order-form__label">Оформление</label>
             <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
           </div>
-          <button class="individual-order-form__button-submit btn" type="submit">Заказать торт</button>
+          <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
         </form>
 
       </section>
 
 
       <section class="reviews">
-        <h2 class="reviews__title">Отзывы</h2>
+        <h2 class="reviews__title subtitle subtitle--reviews">Отзывы</h2>
         <article class="reviews-item">
           <img class="reviews-item__image" src="#" alt="Фотография клиента">
-          <h3 class="reviews-item__user-name">Мария</h3>
-          <span class="reviews-item__user-info">юрист, 33 года</span>
+          <h1 class="reviews-item__user-name">Мария</h1>
+          <div class="reviews-item__user-info">юрист, 33 года</div>
           <blockquote class="reviews-item__comment">
             Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
             доставку! Теперь будем заказывать торты только у вас для наших семейных праздников :)
@@ -248,18 +261,18 @@
 
 
       <section class="about-us">
-        <h2 class="about-us__title">О нас</h2>
+        <h2 class="about-us__title subtitle subtitle--about-us">О нас</h2>
         <article class="about-us-worker">
           <img class="about-us-worker__image" src="#" alt="Фотография сотрудника">
           <div class="about-us-worker__description">
-            <h3 class="about-us-worker__title">О кандитере</h3>
-            <h4 class="about-us-worker__tagline">Кондитер &ndash; как призвание</h4>
+            <h1 class="about-us-worker__title title-annotation">О кандитере</h1>
+            <h2 class="about-us-worker__subtitle">Кондитер &ndash; как призвание</h2>
             <p class="about-us-worker__text">
               Павел &mdash; профессиональный повар в различных гастрономических областях, но однажды его
               сердце покорило кондитерское искусство.<br>
               С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
             </p>
-            <h4 class="about-us-worker__tagline">Принцип &ndash; натуральные ингредиенты</h4>
+            <h2 class="about-us-worker__subtitle">Принцип &ndash; натуральные ингредиенты</h2>
             <p class="about-us-worker__text">
               Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную
               продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
@@ -285,8 +298,8 @@
 
 
       <section class="features">
-        <h2 class="features__title">Наши преимущества</h2>
-        <b class="features__tagline">Почему нас выбирают?</b>
+        <h2 class="features__title subtitle subtitle--features">Наши преимущества</h2>
+        <div class="features__tagline title-annotation">Почему нас выбирают?</div>
         <ul class="features__list">
           <li class="features__item">
             <h3 class="features__name">Без искусственных добавок</h3>
@@ -303,8 +316,8 @@
 
 
       <section class="duties">
-        <h2 class="duties__title">Забота о клиентах</h2>
-        <b class="duties__tagline">Для нас важна</b>
+        <h2 class="duties__title subtitle subtitle--duties">Забота о клиентах</h2>
+        <div class="duties__tagline title-annotation">Для нас важна</div>
         <p class="duties__text">
           Нам важно чтобы каждый торт был безупречным, как внутри, так и снаружи,
           чтобы он был создан исключительно для вас и для вашего события.
@@ -313,7 +326,7 @@
 
 
       <section class="how-to-order">
-        <h2 class="how-to-order__title">Как заказать</h2>
+        <h2 class="how-to-order__title subtitle subtitle--how-to-order">Как заказать</h2>
         <ul class="how-to-order__list">
           <li class="how-to-order__item">
             <h3 class="how-to-order__tagline">Срок заказа</h3>
@@ -340,8 +353,8 @@
 
 
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <b class="contacts__tagline">Остались вопросы?</b>
+        <h2 class="contacts__title subtitle subtitle--contacts">Контакты</h2>
+        <div class="contacts__tagline title-annotation title-annotation--contacts">Остались вопросы?</div>
         <p class="contacts__text">
           Заполните форму ниже и наш кондитер свяжется с Вами
         </p>
@@ -352,7 +365,7 @@
           <input class="contacts__form-input" type="text" placeholder="Email адрес">
           <label class="contacts__form-label">Ваш вопрос:</label>
           <textarea class="contacts__form-textarea" placeholder="Ваш вопрос"></textarea>
-          <button class="contacts__form-submit btn" type="submit">Отправить</button>
+          <button class="contacts__form-submit button button--contacts" type="submit">Отправить</button>
         </form>
         <div class="contacts__info">
           <p class="contacts__text">

@@ -1,0 +1,38 @@
+.features__list {
+  @include list-reset;
+  text-align: center;
+  color: $textprimary-color;
+}
+
+.features__name {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.features__text {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+@media (min-width: $tablet-width) {
+  .features__list {
+    text-align: left;
+  }
+
+  .features__name {
+    font-size: 15px;
+    line-height: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .features__name {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .features__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

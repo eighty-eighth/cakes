@@ -1,0 +1,49 @@
+.subtitle {
+  margin: 0;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  font-family: "Playfair Display", "Georgia", serif;
+  color: $textbrand-color;
+
+  &--about-us,
+  &--features,
+  &--duties {
+    line-height: 33px;
+  }
+
+  &--how-to-order {
+    line-height: 25px;
+    color: $textsecondary-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .subtitle {
+    font-size: 28px;
+    line-height: 39px;
+
+    &--reviews {
+      line-height: 34px;
+    }
+
+    &--about-us,
+    &--features,
+    &--duties {
+      line-height: 28px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subtitle {
+    font-size: 40px;
+    line-height: 66px;
+
+    &--about-us,
+    &--features,
+    &--duties {
+      line-height: 40px;
+    }
+  }
+}

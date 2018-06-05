@@ -1,0 +1,20 @@
+.contacts__text {
+  line-height: 14px;
+  color: $textprimary-color;
+}
+
+.contacts__form-input,
+.contacts__form-textarea {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Circe", "Tahoma", sans-serif;
+  color: $textbrand-color;
+  border: none;
+}
+
+@media (min-width: $desktop-width) {
+  .contacts__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}

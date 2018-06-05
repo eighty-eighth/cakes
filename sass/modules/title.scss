@@ -1,0 +1,24 @@
+.title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 700;
+  font-family: "Playfair Display", "Georgia", serif;
+  text-align: center;
+  color: $textbrand-color;
+}
+
+@media (min-width: $tablet-width) {
+  .title {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .title {
+    font-size: 78px;
+    line-height: 78px;
+  }
+}

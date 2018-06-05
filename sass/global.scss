@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Playfair Display"),
+    url("../fonts/playfairdisplay-bold.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: italic;
+  font-weight: 700;
+  src: local("Playfair Display"),
+    url("../fonts/playfairdisplay-bolditalic.woff2") format("woff2"),
+    url("../fonts/playfairdisplay-bolditalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Circe"),
+    url("../fonts/circe.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Circe";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Circe"),
+    url("../fonts/circe-bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Intro Script R H2 Base";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Intro Script R H2 Base"),
+    url("../fonts/Introscriptr-h2base.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Roboto"),
+    url("../fonts/roboto.woff2") format("woff2"),
+    url("../fonts/roboto.woff") format("woff");
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: "Circe", "Tahoma", sans-serif;
+  color: $textbrand-color;
+  background-color: $bg-color;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+textarea {
+  font: inherit;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

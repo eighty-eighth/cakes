@@ -1,0 +1,53 @@
+.individual-order-form__title {
+  font-size: 22px;
+  line-height: 22px;
+  font-family: "Playfair Display", "Georgia", serif;
+}
+
+.individual-order-form__label {
+  font-size: 20px;
+  line-height: 30px;
+  font-family: "Intro Script R H2 Base", "Georgia", serif;
+  color: $brand-color;
+}
+
+.individual-order-form__input {
+  font-size: 14px;
+  line-height: 14px;
+  font-family: "Circe", "Tahoma", sans-serif;
+  text-align: center;
+  color: $textbrand-color;
+  background-color: $textsecondary-color;
+  border: 1px solid $border-individualorder;
+}
+
+@media (min-width: $tablet-width) {
+  .individual-order-form__title {
+    font-size: 18px;
+  }
+
+  .individual-order-form__label {
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .individual-order-form__input {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .individual-order-form__title {
+    font-size: 27px;
+  }
+
+  .individual-order-form__label {
+    font-size: 27px;
+    line-height: 30px;
+  }
+
+  .individual-order-form__input {
+    font-size: 18px;
+  }
+}

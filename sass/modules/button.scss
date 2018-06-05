@@ -1,0 +1,42 @@
+.button {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 27px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $textbutton-color;
+  background-color: $brand-color;
+  outline: none;
+  border: none;
+
+  &--contacts {
+    font-size: 19px;
+    text-transform: none;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    &--individual-order {
+      font-size: 10px;
+      line-height: 22.5px;
+    }
+
+    &--contacts {
+      font-size: 14px;
+      line-height: 22.5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 13px;
+    line-height: 27px;
+
+    &--contacts {
+      font-size: 19px;
+    }
+  }
+}

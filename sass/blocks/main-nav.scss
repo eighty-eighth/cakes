@@ -1,0 +1,37 @@
+.main-nav__menu {
+  @include list-reset;
+  text-align: center;
+  background-color: $bgnav-color;
+}
+
+.main-nav__link {
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $textnav-color;
+
+  &:hover {
+    color: $linkhover-color;
+  }
+
+  &:active {
+    color: $linkactive-color;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav__toogle {
+    @include visually-hidden;
+  }
+
+  .main-nav__menu {
+    background-color: transparent;
+  }
+
+  .main-nav__link {
+    font-size: 13px;
+    line-height: 27px;
+    color: $textbrand-color;
+  }
+}

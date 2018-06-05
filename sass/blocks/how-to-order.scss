@@ -1,0 +1,21 @@
+.how-to-order__list {
+  @include list-reset;
+  color: $textsecondary-color;
+}
+
+.how-to-order__tagline {
+  font-size: 15px;
+  line-height: 15px;
+}
+
+@media (min-width: $desktop-width) {
+  .how-to-order__tagline {
+    font-size: 21px;
+    line-height: 27px;
+  }
+
+  .how-to-order__text {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
