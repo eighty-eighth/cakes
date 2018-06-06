@@ -2,6 +2,10 @@
   @include list-reset;
 }
 
+.cakes__image {
+  background-color: $bg-plug;
+}
+
 .cakes__tagline {
   font-size: 14px;
   line-height: 14px;
