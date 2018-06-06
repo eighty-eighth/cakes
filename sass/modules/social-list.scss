@@ -1,4 +1,35 @@
 .social-list {
   @include list-reset;
   display: flex;
+  font-size: 0;
+}
+
+.social-list__icon {
+  fill: $brand-color;
+  stroke-width: 8px;
+  stroke: #f50049;
+
+  &--footer {
+    fill: rgba(255, 255, 255, 0.4);
+    stroke: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social-list__icon {
+    &--big-inst {
+      width: 28px;
+      height: 28px;
+    }
+
+    &--big-vk {
+      width: 41px;
+      height: 29px;
+    }
+
+    &--footer {
+      fill: rgba(0, 0, 0, 0.4);
+      stroke: rgba(0, 0, 0, 0.4);
+    }
+  }
 }

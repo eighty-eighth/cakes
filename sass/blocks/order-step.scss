@@ -1,3 +1,7 @@
+.order-step {
+  background-color: $white;
+}
+
 .order-step__title {
   font-size: 16px;
   line-height: 16px;
@@ -13,6 +17,14 @@
 
 .order-step__item {
   color: $textorder-color;
+}
+
+.order-step__image {
+  background-color: $white;
+
+  &--filling {
+    background-color: $bg-color;
+  }
 }
 
 .order-step__tagline {

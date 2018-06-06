@@ -3,6 +3,10 @@
   color: $textprimary-color;
 }
 
+.contacts__form-label {
+  display: none;
+}
+
 .contacts__form-input,
 .contacts__form-textarea {
   font-size: 14px;

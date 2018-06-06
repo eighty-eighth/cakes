@@ -2,3 +2,19 @@
   @include list-reset;
   color: $textprimary-color;
 }
+
+.pitch__offer-icon {
+  fill: $brand-color;
+
+  &--ingredients {
+    stroke-width: 5px;
+    stroke: $brand-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .pitch__offer-icon {
+    width: 55px;
+    height: 55px;
+  }
+}

@@ -4,6 +4,11 @@
   text-align: center;
 }
 
+.reviews-item__image {
+  background-color: $bg-plug;
+  border-radius: 50%;
+}
+
 .reviews-item__user-name {
   font-size: 14px;
   line-height: 14px;

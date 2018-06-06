@@ -2,6 +2,16 @@
   @include list-reset;
   text-align: center;
   color: $textprimary-color;
+  background-color: $white;
+}
+
+.features__icon {
+  fill: $brand-color;
+
+  &--ingredients {
+    stroke-width: 5px;
+    stroke: $brand-color;
+  }
 }
 
 .features__name {
@@ -17,6 +27,19 @@
 @media (min-width: $tablet-width) {
   .features__list {
     text-align: left;
+    background-color: transparent;
+  }
+
+  .features__icon {
+    &--ingredients {
+      width: 48px;
+      height: 48px;
+    }
+
+    &--cake-fresh {
+      width: 63px;
+      height: 38px;
+    }
   }
 
   .features__name {
@@ -26,6 +49,18 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features__icon {
+    &--ingredients {
+      width: 61px;
+      height: 61px;
+    }
+
+    &--cake-fresh {
+      width: 84px;
+      height: 50px;
+    }
+  }
+
   .features__name {
     font-size: 20px;
     line-height: 27px;
