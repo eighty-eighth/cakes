@@ -2,6 +2,10 @@
 $tablet-width: 768px;
 $desktop-width: 1366px;
 
+// ### Отступы от контента страницы
+$mobile-padding: 20px;
+$tablet-padding: $mobile-padding;
+$desktop-padding: 73px;
 
 // ##### Цветовая схема #####
 $white: #ffffff;
