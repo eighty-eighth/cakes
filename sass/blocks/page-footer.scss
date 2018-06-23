@@ -24,6 +24,7 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
     background-color: $bglight-layer;
   }
 

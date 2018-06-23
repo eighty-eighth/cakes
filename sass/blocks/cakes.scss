@@ -49,6 +49,8 @@
 @media (min-width: $desktop-width) {
   .cakes {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
+    margin-top: 155px;
   }
 
   .cakes__tagline {

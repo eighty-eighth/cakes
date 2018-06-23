@@ -17,6 +17,7 @@
 @media (min-width: $desktop-width) {
   .duties {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
   }
 
   .duties__text {

@@ -32,6 +32,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
     margin-top: 65px;
   }
 

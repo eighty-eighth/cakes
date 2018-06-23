@@ -13,6 +13,7 @@
 @media (min-width: $desktop-width) {
   .individual-order {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
     margin-top: 95px;
   }
 }

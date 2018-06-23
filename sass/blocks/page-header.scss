@@ -38,6 +38,7 @@
 @media (min-width: $desktop-width) {
   .page-header {
     @include h-padding($desktop-padding);
+    margin: 0 auto;
     background-color: transparent;
   }
 

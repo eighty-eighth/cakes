@@ -21,6 +21,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .how-to-order {
+    margin: 0 auto;
+  }
+
   .how-to-order__tagline {
     font-size: 21px;
     line-height: 27px;
