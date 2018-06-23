@@ -1,4 +1,5 @@
 .how-to-order {
+  @include h-padding;
   background-color: $bghowtoorder-color;
 }
 
@@ -10,6 +11,13 @@
 .how-to-order__tagline {
   font-size: 15px;
   line-height: 15px;
+}
+
+@media (min-width: $tablet-width) {
+  .how-to-order {
+    @include h-padding($tablet-padding);
+    max-width: $desktop-width;
+  }
 }
 
 @media (min-width: $desktop-width) {

@@ -1,0 +1,18 @@
+.individual-order {
+  @include h-padding;
+  margin-top: 50px;
+}
+
+@media (min-width: $tablet-width) {
+  .individual-order {
+    max-width: $desktop-width;
+    margin-top: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .individual-order {
+    @include h-padding($desktop-padding);
+    margin-top: 95px;
+  }
+}

@@ -1,3 +1,8 @@
+.contacts {
+  @include h-padding;
+  margin-top: 40px;
+}
+
 .contacts__text {
   line-height: 14px;
   color: $textprimary-color;
@@ -16,7 +21,20 @@
   border: none;
 }
 
+@media (min-width: $tablet-width) {
+  .contacts {
+    @include h-padding($tablet-padding);
+    max-width: $desktop-width;
+    margin-top: 45px;
+  }
+}
+
 @media (min-width: $desktop-width) {
+  .contacts {
+    @include h-padding($desktop-padding);
+    margin-top: 65px;
+  }
+
   .contacts__text {
     font-size: 20px;
     line-height: 24px;
