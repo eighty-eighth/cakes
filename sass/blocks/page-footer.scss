@@ -1,4 +1,5 @@
 .page-footer {
+  @include h-padding;
   background-color: $bgdark-layer;
 }
 
@@ -11,6 +12,10 @@
 }
 
 @media (min-width: $tablet-width) {
+  .page-footer {
+    max-width: $desktop-width;
+  }
+
   .page-footer__logo {
     font-size: 18px;
   }
@@ -18,6 +23,8 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
+    @include h-padding($desktop-padding);
+    margin: 0 auto;
     background-color: $bglight-layer;
   }
 

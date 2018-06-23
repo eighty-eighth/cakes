@@ -1,3 +1,7 @@
+.pitch {
+  @include h-padding;
+}
+
 .pitch__offers-list {
   @include list-reset;
   color: $textprimary-color;
@@ -13,8 +17,20 @@
 }
 
 @media (min-width: $tablet-width) {
+  .pitch {
+    @include h-padding($tablet-padding);
+    max-width: $desktop-width;
+  }
+
   .pitch__offer-icon {
     width: 55px;
     height: 55px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .pitch {
+    @include h-padding($desktop-padding);
+    margin: 0 auto;
   }
 }

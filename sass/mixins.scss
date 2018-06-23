@@ -18,3 +18,8 @@
 @mixin transparentize-color($color, $transparent) {
   color: transparentize($color, $transparent);
 }
+
+@mixin h-padding($padding: $mobile-padding) {
+  padding-left: $padding;
+  padding-right: $padding;
+}

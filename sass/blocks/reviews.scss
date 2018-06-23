@@ -1,27 +1,20 @@
-.duties {
+.reviews {
   @include h-padding;
-  margin-top: 35px;
-}
-
-.duties__text {
-  color: $textprimary-color;
+  margin-top: 45px;
 }
 
 @media (min-width: $tablet-width) {
-  .duties {
+  .reviews {
     @include h-padding($tablet-padding);
     max-width: $desktop-width;
+    margin-top: 40px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .duties {
+  .reviews {
     @include h-padding($desktop-padding);
     margin: 0 auto;
-  }
-
-  .duties__text {
-    font-size: 20px;
-    line-height: 24px;
+    margin-top: 100px;
   }
 }

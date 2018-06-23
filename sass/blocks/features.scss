@@ -1,3 +1,8 @@
+.features {
+  @include h-padding;
+  margin-top: 45px;
+}
+
 .features__list {
   @include list-reset;
   text-align: center;
@@ -25,6 +30,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .features {
+    @include h-padding($tablet-padding);
+    max-width: $desktop-width;
+    margin-top: 70px;
+  }
+
   .features__list {
     text-align: left;
     background-color: transparent;
@@ -49,6 +60,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .features {
+    @include h-padding($desktop-padding);
+    margin: 0 auto;
+    margin-top: 140px;
+  }
+
   .features__icon {
     &--ingredients {
       width: 61px;
