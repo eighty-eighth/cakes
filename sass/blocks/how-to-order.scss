@@ -16,7 +16,7 @@
 @media (min-width: $tablet-width) {
   .how-to-order {
     @include h-padding($tablet-padding);
-    max-width: $desktop-width;
+    max-width: $max-width;
   }
 }
 

@@ -19,7 +19,7 @@
 @media (min-width: $tablet-width) {
   .pitch {
     @include h-padding($tablet-padding);
-    max-width: $desktop-width;
+    max-width: $max-width;
   }
 
   .pitch__offer-icon {
