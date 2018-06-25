@@ -32,7 +32,6 @@
 @media (min-width: $tablet-width) {
   .features {
     @include h-padding($tablet-padding);
-    max-width: $max-width;
     margin-top: 70px;
   }
 
@@ -62,6 +61,7 @@
 @media (min-width: $desktop-width) {
   .features {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
     margin-top: 140px;
   }

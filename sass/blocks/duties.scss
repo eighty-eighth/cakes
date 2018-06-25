@@ -10,13 +10,13 @@
 @media (min-width: $tablet-width) {
   .duties {
     @include h-padding($tablet-padding);
-    max-width: $max-width;
   }
 }
 
 @media (min-width: $desktop-width) {
   .duties {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
   }
 

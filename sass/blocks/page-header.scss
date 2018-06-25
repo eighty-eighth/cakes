@@ -23,7 +23,6 @@
     @include h-padding($tablet-padding);
     display: flex;
     justify-content: space-between;
-    max-width: $max-width;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -45,6 +44,7 @@
   .page-header {
     @include h-padding($desktop-padding);
     justify-content: flex-start;
+    max-width: $max-width;
     margin: 0 auto;
     padding-top: 54px;
     background-color: transparent;

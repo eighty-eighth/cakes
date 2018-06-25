@@ -24,7 +24,6 @@
 @media (min-width: $tablet-width) {
   .contacts {
     @include h-padding($tablet-padding);
-    max-width: $max-width;
     margin-top: 45px;
   }
 }
@@ -32,6 +31,7 @@
 @media (min-width: $desktop-width) {
   .contacts {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
     margin-top: 65px;
   }

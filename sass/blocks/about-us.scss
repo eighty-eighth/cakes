@@ -6,7 +6,6 @@
 @media (min-width: $tablet-width) {
   .about-us {
     @include h-padding($tablet-padding);
-    max-width: $max-width;
     margin-top: 110px;
   }
 }
@@ -14,6 +13,7 @@
 @media (min-width: $desktop-width) {
   .about-us {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
     margin-top: 175px;
   }

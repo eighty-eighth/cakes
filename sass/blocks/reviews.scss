@@ -6,7 +6,6 @@
 @media (min-width: $tablet-width) {
   .reviews {
     @include h-padding($tablet-padding);
-    max-width: $max-width;
     margin-top: 40px;
   }
 }
@@ -14,6 +13,7 @@
 @media (min-width: $desktop-width) {
   .reviews {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
     margin-top: 100px;
   }
