@@ -383,18 +383,20 @@
         <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="individual-order-form__title">Ваш выбор</h3>
           <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Начинка</label>
-            <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Начинка</label>
+              <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+            </div>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Размер</label>
+              <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
+            </div>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Оформление</label>
+              <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
+            </div>
+            <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
           </div>
-          <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Размер</label>
-            <input class="individual-order-form__input" type="text" value="1 кг" disabled>
-          </div>
-          <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Оформление</label>
-            <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
-          </div>
-          <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
         </form>
 
       </section>
