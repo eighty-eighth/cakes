@@ -1,22 +1,76 @@
 .order-step {
+  padding: 5px 20px 25px;
   background-color: $white;
 }
 
+.order-step + .order-step {
+  margin-top: 10px;
+}
+
 .order-step__title {
+  margin: 0;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
   font-family: "Playfair Display", "Geargia", serif;
   color: $brand-color;
+
+  &--size {
+    margin-bottom: 45px;
+  }
+
+  &--decor {
+    margin-bottom: 25px;
+  }
 }
 
 .order-step__title-number {
+  margin-right: 10px;
   font-size: 30px;
   line-height: 30px;
 }
 
+.order-step__list {
+  position: relative;
+  margin: 0 auto;
+}
+
 .order-step__item {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  text-align: center;
   color: $textorder-color;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+  transform: translateX(500px);
+  transition: all 0.1s ease 100ms;
+}
+
+.order-step__item--active {
+  position: static;
+  width: auto;
+  height: auto;
+  transform: translateX(0);
+  transition: all 0.1s ease 100ms;
+}
+
+.order-step__image-wrapper {
+  position: relative;
+  margin-bottom: 38px;
+  line-height: 0;
+
+  &--size {
+    margin-bottom: 68px;
+  }
+
+  &--decor {
+    margin-bottom: 35px;
+  }
 }
 
 .order-step__image {
@@ -27,9 +81,26 @@
   }
 }
 
+.order-step__toggles-list {
+  position: absolute;
+  bottom: -18px;
+  justify-content: center;
+  width: 100%;
+
+  &--size {
+    bottom: -53px;
+  }
+}
+
 .order-step__tagline {
+  margin-bottom: 8px;
   font-size: 16px;
   line-height: 16px;
+
+  &--filling {
+    margin-top: 0;
+    text-align: left;
+  }
 
   &--decor {
     font-size: 14px;
@@ -37,22 +108,177 @@
   }
 }
 
+.order-step__description {
+  margin: 8px 0;
+
+  &--filling {
+    text-align: left;
+  }
+}
+
 .order-step__price {
+  display: block;
+  margin-top: 15px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   font-family: "Playfair Display", "Georgia", serif;
+  text-align: center;
+
+  &--decor {
+    margin-top: 8px;
+  }
+}
+
+.order-step__button-choose {
+  margin-top: 15px;
+
+  &--size {
+    margin-top: 55px;
+  }
+
+  &--decor {
+    margin-top: 30px;
+  }
+}
+
+.order-step__counter {
+  position: absolute;
+  font-size: 12px;
+  line-height: 25px;
+
+  &--filling {
+    top: 90px;
+    left: 50%;
+    color: $white;
+    transform: translateX(94px);
+  }
+
+  &--decor {
+    top: 180px;
+    left: 50%;
+    color: $textorder-color;
+    transform: translateX(57px);
+  }
+}
+
+.order-step__controls {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
+  .order-step {
+    display: flex;
+    justify-content: space-between;
+    padding: 43px 46px 57px;
+
+    &--size {
+      flex-direction: column;
+      padding-bottom: 63px;
+    }
+
+    &--decor {
+      padding-bottom: 35px;
+      background-image: url("../img/bg-design-cake-tablet@1x.png");
+      background-repeat: no-repeat;
+      background-position: 4px 120px;
+    }
+  }
+
+  .order-step + .order-step {
+    margin-top: 20px;
+  }
+
   .order-step__title {
     font-size: 18px;
     line-height: 18px;
+
+    &--filling {
+      flex-shrink: 0;
+      max-width: 110px;
+      margin-right: 17px;
+    }
+
+    &--size {
+      margin-bottom: 23px;
+    }
+
+    &--decor {
+      flex-grow: 1;
+      max-width: 130px;
+    }
   }
 
   .order-step__title-number {
+    display: block;
     font-size: 36px;
     line-height: 36px;
+  }
+
+  .order-step__list {
+    display: flex;
+    position: relative;
+    margin-right: 0;
+    margin-left: 0;
+
+    &--filling {
+      margin-top: 10px;
+    }
+
+    &--size {
+      justify-content: space-between;
+      align-items: flex-end;
+      margin-top: -18px;
+      padding: 0 25px;
+    }
+
+    &--decor {
+      margin: 0 auto;
+    }
+  }
+
+  .order-step__item {
+    display: flex;
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    transform: translateX(0);
+
+    &--size {
+      flex-direction: column;
+      text-align: left;
+    }
+
+    &--decor {
+      flex-direction: column;
+    }
+  }
+
+  .order-step__item--decor + .order-step__item--decor {
+    margin-left: 25px;
+  }
+
+  .order-step__image-wrapper {
+    position: static;
+    flex-shrink: 0;
+    margin-bottom: 0;
+  }
+
+  .order-step__info {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 25px;
+    padding-right: 85px;
+
+    &--decor {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .order-step__tagline {
@@ -60,25 +286,119 @@
     line-height: 18px;
 
     &--decor {
+      margin-bottom: 0;
       font-size: 14px;
+    }
+  }
+
+  .order-step__description {
+    &--size {
+      font-size: 12px;
+      line-height: 20px;
+    }
+
+    &--size-2kg {
+      margin-left: 8px;
     }
   }
 
   .order-step__price {
     font-size: 20px;
     line-height: 20px;
+    text-align: left;
 
     &--decor {
+      margin-top: 0;
       font-size: 14px;
       line-height: 18px;
+      text-align: center;
+    }
+  }
+
+  .order-step__button-choose {
+    display: none;
+
+    &--filling {
+      display: block;
+      margin-top: 25px;
+    }
+  }
+
+  .order-step__counter {
+    line-height: 15px;
+    transform: translateX(0);
+
+    &--filling {
+      top: auto;
+      right: 25px;
+      bottom: 0;
+      left: auto;
+      font-size: 10px;
+      color: $textorder-color;
+    }
+
+    &--decor {
+      top: auto;
+      right: -62px;
+      bottom: 0;
+      left: auto;
+      font-size: 12px;
+    }
+  }
+
+  .order-step__controls {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0;
+
+    &--filling {
+      top: 106px;
+      right: 19px;
+      left: -68px;
+    }
+
+    &--decor {
+      top: 122px;
+      right: -53px;
+      left: -54px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .order-step {
+    justify-content: flex-start;
+    padding: 74px 80px 92px;
+
+    &--size {
+      padding-bottom: 135px;
+    }
+
+    &--decor {
+      padding-top: 68px;
+      padding-bottom: 35px;
+      background-image: url("../img/bg-design-cake-desktop@1x.png");
+      background-position: 17px 198px;
+    }
+  }
+
+  .order-step + .order-step {
+    margin-top: 35px;
+  }
+
   .order-step__title {
     font-size: 27px;
     line-height: 29px;
+
+    &--filling {
+      max-width: 175px;
+      margin-right: 40px;
+    }
+
+    &--decor {
+      max-width: 190px;
+    }
   }
 
   .order-step__title-number {
@@ -86,13 +406,69 @@
     line-height: 58px;
   }
 
+  .order-step__list {
+    margin-top: 14px;
+
+    &--filling {
+      flex-grow: 1;
+    }
+  }
+
+  .order-step__item--decor + .order-step__item--decor {
+    margin-left: 40px;
+  }
+
+  .order-step__info {
+    max-width: 280px;
+    margin-left: 42px;
+  }
+
   .order-step__tagline {
     font-size: 20px;
     line-height: 20px;
   }
 
+  .order-step__description {
+    &--size {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+
   .order-step__price {
+    margin-top: 20px;
     font-size: 22px;
     line-height: 22px;
+  }
+
+  .order-step__button-choose {
+    margin-top: 50px;
+  }
+
+  .order-step__counter {
+    font-size: 18px;
+    line-height: 25px;
+
+    &--filling {
+      right: 50px;
+    }
+
+    &--decor {
+      right: -97px;
+    }
+  }
+
+  .order-step__controls {
+    &--filling {
+      top: 186px;
+      right: 47px;
+      left: -100px;
+    }
+
+    &--decor {
+      top: 210px;
+      right: -80px;
+      left: -80px;
+    }
   }
 }
