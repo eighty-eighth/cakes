@@ -219,10 +219,10 @@
             </div>
             <div class="order-step__counter order-step__counter--filling">1/12</div>
             <div class="order-step__controls order-step__controls--filling">
-              <svg class="order-step__controls-arrow" width="9" height="16">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
               </svg>
-              <svg class="order-step__controls-arrow" width="9" height="16">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
               </svg>
             </div>
@@ -370,10 +370,10 @@
             </div>
             <div class="order-step__counter order-step__counter--decor">1/35</div>
             <div class="order-step__controls order-step__controls--decor">
-              <svg class="order-step__controls-arrow" width="9" height="16">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
               </svg>
-              <svg class="order-step__controls-arrow" width="9" height="16">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
               </svg>
             </div>
@@ -405,27 +405,39 @@
       <section class="reviews">
         <h2 class="reviews__title subtitle subtitle--reviews">Отзывы</h2>
         <article class="reviews-item">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="img/photo-review-maria-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/photo-review-maria-tablet.png">
-            <img class="reviews-item__image" src="img/photo-review-maria-mobile.png" alt="Фотография клиента">
-          </picture>
-          <h1 class="reviews-item__user-name">Мария</h1>
-          <div class="reviews-item__user-info">юрист, 33 года</div>
-          <blockquote class="reviews-item__comment">
-            Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
-            доставку! Теперь будем заказывать торты только у вас для наших семейных праздников :)
-            <a class="reviews-item__link" href="#">Развернуть</a>
-          </blockquote>
-          <div class="reviews-item__counter">1/26</div>
+          <div class="review-item__image-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/photo-review-maria-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/photo-review-maria-tablet.png">
+              <img class="reviews-item__image" src="img/photo-review-maria-mobile.png" alt="Фотография клиента">
+            </picture>
+          </div>
+          <div class="review-item__info">
+            <h1 class="reviews-item__user-name">Мария</h1>
+            <div class="reviews-item__user-info">юрист, 33 года</div>
+            <blockquote class="reviews-item__comment">
+              Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
+              доставку! Теперь будем заказывать торты только у вас для наших семейных праздников :)
+              <a class="reviews-item__link" href="#">Развернуть</a>
+            </blockquote>
+          </div>
         </article>
-        <ul class="toggles-list">
+        <ul class="reviews__toggles-list toggles-list">
           <li class="toggles-list__item">Slide 1</li>
           <li class="toggles-list__item">Slide 2</li>
           <li class="toggles-list__item">Slide 3</li>
           <li class="toggles-list__item">Slide 4</li>
           <li class="toggles-list__item">Slide 5</li>
         </ul>
+        <div class="reviews__counter">1/26</div>
+        <div class="reviews__controls">
+          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
+          </svg>
+          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
+          </svg>
+        </div>
       </section>
 
 
