@@ -3,10 +3,20 @@
   margin-top: 45px;
 }
 
+.about-us__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
 @media (min-width: $tablet-width) {
   .about-us {
     @include h-padding($tablet-padding);
     margin-top: 110px;
+  }
+
+  .about-us__title {
+    margin-bottom: -28px;
+    text-align: left;
   }
 }
 
@@ -16,5 +26,9 @@
     max-width: $max-width;
     margin: 0 auto;
     margin-top: 175px;
+  }
+
+  .about-us__title {
+    margin-bottom: -60px;
   }
 }
