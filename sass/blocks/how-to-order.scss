@@ -1,28 +1,138 @@
 .how-to-order {
   @include h-padding;
+  margin-top: -286px;
+  padding-top: 35px;
+  padding-bottom: 148px;
   background-color: $bghowtoorder-color;
+  background-image: url("../img/bg-howto-box-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  background-size: 320px 482px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-howto-box-mobile@2x.png");
+  }
+}
+
+.how-to-order__title {
+  text-align: center;
 }
 
 .how-to-order__list {
   @include list-reset;
+  margin-top: 35px;
   color: $textsecondary-color;
 }
 
+.how-to-order__item {
+  position: relative;
+  padding-right: 15px;
+  padding-left: 47px;
+}
+
+.how-to-order__item + .how-to-order__item {
+  margin-top: 20px;
+}
+
 .how-to-order__tagline {
+  margin-top: 0;
+  margin-bottom: 5px;
   font-size: 15px;
   line-height: 15px;
+}
+
+.how-to-order__text {
+  margin: 5px 0;
+}
+
+.how-to-order__text-point {
+  position: absolute;
+  top: -23px;
+  left: 18px;
+  width: 17px;
+  font-size: 35px;
+  line-height: 63px;
+  font-weight: bold;
+  font-family: "Playfair Display", "Georgia", serif;
+  text-align: right;
+
+  &--number-three {
+    top: -26px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .how-to-order {
     @include h-padding($tablet-padding);
+    margin-top: 0;
+    padding-top: 50px;
+    padding-bottom: 65px;
+    padding-left: 328px;
+    background: url("../img/bg-howto-box-tablet@1x.png") no-repeat 0 bottom, url("../img/bg-howto-pattern-red.png") repeat 0 0;
+    background-size: 768px 420px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-howto-box-tablet@2x.png") no-repeat 0 bottom, url("../img/bg-howto-pattern-red.png") repeat 0 0;
+      background-size: 768px 420px;
+    }
+  }
+
+  .how-to-order__title {
+    text-align: left;
+  }
+
+  .how-to-order__item {
+    padding-right: 80px;
+    padding-left: 41px;
+  }
+
+  .how-to-order__item + .how-to-order__item {
+    margin-top: 30px;
+  }
+
+  .how-to-order__text-point {
+    left: 2px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &--number-three {
+      left: 0;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .how-to-order {
+    @include h-padding($desktop-padding);
     max-width: $max-width;
-    margin: 0 auto;
+    margin: -30px auto 0;
+    padding-top: 115px;
+    padding-bottom: 180px;
+    background: url("../img/bg-howto-box-desktop@1x.png") no-repeat 0 bottom, url("../img/bg-howto-pattern-red.png") repeat 0 0;
+    background-size: 1366px 703px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background: url("../img/bg-howto-box-desktop@2x.png") no-repeat 0 bottom, url("../img/bg-howto-pattern-red.png") repeat 0 0;
+      background-size: 1366px 703px;
+    }
+  }
+
+  .how-to-order__title {
+    margin-left: 832px;
+  }
+
+  .how-to-order__list {
+    margin-top: 30px;
+    margin-left: 747px;
+  }
+
+  .how-to-order__item {
+    padding-right: 10px;
+    padding-left: 47px;
+  }
+
+  .how-to-order__item + .how-to-order__item {
+    margin-top: 35px;
   }
 
   .how-to-order__tagline {
@@ -33,5 +143,16 @@
   .how-to-order__text {
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .how-to-order__text-point {
+    top: -15px;
+    left: 0;
+    font-size: 64px;
+    line-height: 64px;
+
+    &--number-first {
+      left: 7px;
+    }
   }
 }
