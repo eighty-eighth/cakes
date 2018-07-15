@@ -46,7 +46,6 @@
 }
 
 .individual-order-form__button-submit {
-  width: 100%;
   margin-top: 30px;
 }
 
@@ -62,6 +61,7 @@
 
   .individual-order-form__group {
     display: flex;
+    align-items: flex-end;
     padding: 0;
   }
 

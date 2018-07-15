@@ -1,5 +1,6 @@
 .button {
-  display: block;
+  display: inline-block;
+  padding: 12px 66px;
   font-size: 13px;
   line-height: 27px;
   text-decoration: none;
@@ -8,8 +9,24 @@
   background-color: $brand-color;
   outline: none;
   border: none;
+  border-radius: 25px;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 5px 13px 8px rgba(255, 0, 67, 0.3);
+  }
+
+  &:active {
+    box-shadow: 0 5px 13px 8px rgba(255, 0, 67, 0.6);
+  }
+
+  &--individual-order,
+  &--individual-order-form {
+    padding: 12px 61px;
+  }
 
   &--contacts {
+    padding: 12px 45px;
     font-size: 19px;
     text-transform: none;
   }
@@ -20,8 +37,13 @@
     margin-left: 0;
 
     &--individual-order {
+      padding: 10px 45px;
       font-size: 10px;
       line-height: 22.5px;
+    }
+
+    &--individual-order-form {
+      padding: 10px 40px;
     }
 
     &--contacts {
@@ -35,6 +57,14 @@
   .button {
     font-size: 13px;
     line-height: 27px;
+
+    &--individual-order {
+      padding: 12px 61px;
+    }
+
+    &--individual-order-form {
+      padding: 12px 62px;
+    }
 
     &--contacts {
       font-size: 19px;

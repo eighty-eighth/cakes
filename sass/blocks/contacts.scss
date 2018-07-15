@@ -27,6 +27,7 @@
 
 .contacts__form {
   margin-top: 10px;
+  text-align: center;
 }
 
 .contacts__form-label {
@@ -112,6 +113,10 @@
       margin-top: 18px;
       margin-bottom: 18px;
     }
+  }
+
+  .contacts__form {
+    text-align: left;
   }
 
   .contacts__form-submit {
