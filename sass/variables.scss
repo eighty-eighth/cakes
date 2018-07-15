@@ -1,13 +1,16 @@
 // ### Брекпоинты ###
 $tablet-width: 768px;
 $desktop-width: 1366px;
+$max-width: 1220px;
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;
 
 // ### Отступы от контента страницы
 $mobile-padding: 20px;
-$tablet-padding: 46px;
-$desktop-padding: 74px;
+$tablet-padding: 47px;
+$desktop-padding: 73px;
 
-// ##### Цветовая схема #####
+// #################### Цветовая схема ####################
 $white: #ffffff;
 $black: #000000;
 
@@ -38,5 +41,6 @@ $bgnav-color: #e7e7e7;
 $bgtoggle-color: #dddddd;
 $bghowtoorder-color: #e3353d;
 
-// ### цвета рамок
+// ### цвета рамок и декоративных элементов
 $border-individualorder: #dddddd;
+$decor-arrow: #f77b91;

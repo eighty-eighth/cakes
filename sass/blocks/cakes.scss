@@ -1,17 +1,44 @@
 .cakes {
-  @include h-padding;
+  display: flex;
+  flex-wrap: wrap;
   margin-top: 50px;
+  padding-left: 20px;
+}
+
+.cakes__title {
+  width: 100%;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .cakes__list {
   @include list-reset;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.cakes__item {
+  position: relative;
+  width: 280px;
+  height: 120px;
+  margin-bottom: 10px;
+  margin-right: 20px;
 }
 
 .cakes__image {
   background-color: $bg-plug;
 }
 
+.cakes__review {
+  position: absolute;
+  top: 13px;
+  left: 13px;
+}
+
 .cakes__tagline {
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
 }
@@ -19,6 +46,10 @@
 .cakes__tagline-link {
   text-decoration: none;
   color: $textbrand-color;
+
+  &--arrow {
+    display: none;
+  }
 }
 
 .cakes__description {
@@ -33,24 +64,88 @@
 
 @media (min-width: $tablet-width) {
   .cakes {
-    max-width: $desktop-width;
+    flex-direction: column;
     margin-top: 155px;
+    padding-right: 20px;
+  }
+
+  .cakes__title {
+    width: 728px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .cakes__list {
+    width: 728px;
+    height: 408px;
+  }
+
+  .cakes__item {
+    position: relative;
+    width: 289px;
+    height: 184px;
+    margin-bottom: 20px;
+
+    &--big {
+      width: 420px;
+      height: 388px;
+    }
+  }
+
+  .cakes__review {
+    top: 23px;
+    left: 26px;
   }
 
   .cakes__item-link {
     display: inline-block;
+    position: absolute;
+    right: 72px;
+    bottom: 20px;
     font-size: 12px;
     line-height: 12px;
     text-decoration: none;
     color: $textbrand-color;
+
+    &--arrow {
+      display: none;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .cakes {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
     margin-top: 155px;
+  }
+
+  .cakes__title {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .cakes__list {
+    width: 1220px;
+    height: 696px;
+  }
+
+  .cakes__item {
+    width: 482px;
+    height: 304px;
+    margin-right: 42px;
+    margin-bottom: 44px;
+
+    &--big {
+      width: 694px;
+      height: 651px;
+    }
+  }
+
+  .cakes__review {
+    top: 40px;
+    left: 46px;
   }
 
   .cakes__tagline {
@@ -64,7 +159,16 @@
   }
 
   .cakes__item-link {
+    right: 110px;
+    bottom: 35px;
     font-size: 20px;
     line-height: 20px;
+
+    &--arrow {
+      display: block;
+      right: 70px;
+      bottom: 39px;
+      line-height: 0;
+    }
   }
 }

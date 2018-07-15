@@ -1,26 +1,74 @@
 .duties {
   @include h-padding;
   margin-top: 35px;
+  padding-bottom: 455px;
+  background-image: url("../img/bg-duties-cake-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 320px 452px;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-duties-cake-mobile@2x.png");
+  }
 }
 
 .duties__text {
+  margin-top: 3px;
+  margin-bottom: 3px;
   color: $textprimary-color;
 }
 
 @media (min-width: $tablet-width) {
   .duties {
     @include h-padding($tablet-padding);
-    max-width: $desktop-width;
+    display: flex;
+    flex-direction: column;
+    min-height: 270px;
+    margin-top: -95px;
+    padding-top: 170px;
+    padding-bottom: 0;
+    background-image: url("../img/bg-duties-cake-tablet@1x.png");
+    background-position: 100% 0;
+    background-size: 418px 441px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-duties-cake-tablet@2x.png");
+    }
+  }
+
+  .duties__tagline {
+    margin-top: 5px;
+  }
+
+  .duties__text {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 310px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .duties {
     @include h-padding($desktop-padding);
-    margin: 0 auto;
+    max-width: $max-width;
+    min-height: 462px;
+    margin: -173px auto 0;
+    padding-top: 340px;
+    background-image: url("../img/bg-duties-cake-desktop@1x.png");
+    background-size: 768px 802px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-duties-cake-desktop@2x.png");
+    }
+  }
+
+  .duties__tagline {
+    margin-top: 25px;
   }
 
   .duties__text {
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-size: 20px;
     line-height: 24px;
   }

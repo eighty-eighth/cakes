@@ -2,6 +2,10 @@
   @include list-reset;
 }
 
+.footer-nav__item + .footer-nav__item {
+  margin-top: 15px;
+}
+
 .footer-nav__link {
   font-family: "Roboto", "Tahoma", sans-serif;
   text-decoration: none;
@@ -9,6 +13,21 @@
 }
 
 @media (min-width: $tablet-width) {
+  .footer-nav__menu {
+    display: flex;
+  }
+
+  .footer-nav__item {
+    &--mobile-tel {
+      display: none;
+    }
+  }
+
+  .footer-nav__item + .footer-nav__item {
+    margin-top: 0;
+    margin-left: 40px;
+  }
+
   .footer-nav__link {
     font-size: 12px;
     line-height: 12px;
@@ -16,6 +35,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .footer-nav__item + .footer-nav__item {
+    margin-left: 45px;
+  }
+
   .footer-nav__link {
     font-size: 16px;
     line-height: 32px;

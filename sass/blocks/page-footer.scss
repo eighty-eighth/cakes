@@ -1,5 +1,8 @@
 .page-footer {
   @include h-padding;
+  display: flex;
+  flex-direction: column;
+  padding-top: 35px;
   background-color: $bgdark-layer;
 }
 
@@ -11,25 +14,96 @@
   color: $textsecondary-color;
 }
 
+.page-footer__nav {
+  margin-top: 20px;
+}
+
+.page-footer__social-list {
+  margin-top: 30px;
+}
+
+.page-footer__decor-line {
+  @include transparentize-background-color(#b0b0b0, 0.9);
+  width: 100%;
+  height: 1px;
+  margin-top: 25px;
+  margin-bottom: 0;
+  border: none;
+}
+
+.page-footer__copyright-text {
+  @include transparentize-color($textsecondary-color, 0.5);
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 12px;
+  line-height: 25px;
+  font-family: "Roboto", "Tahoma", sans-serif;
+}
+
 @media (min-width: $tablet-width) {
   .page-footer {
-    max-width: $desktop-width;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .page-footer__logo {
+    margin-right: 60px;
     font-size: 18px;
+  }
+
+  .page-footer__nav {
+    margin-top: 0;
+  }
+
+  .page-footer__social-list {
+    order: 1;
+    margin-top: 13px;
+    margin-right: auto;
+    margin-bottom: 13px;
+  }
+
+  .page-footer__decor-line {
+    margin-top: 11px;
+    margin-right: 46px;
+    margin-left: 46px;
+  }
+
+  .page-footer__copyright-text {
+    margin-right: 33px;
+    margin-left: auto;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     @include h-padding($desktop-padding);
+    justify-content: space-between;
+    max-width: $max-width;
     margin: 0 auto;
+    padding-top: 30px;
     background-color: $bglight-layer;
   }
 
   .page-footer__logo {
     font-size: 28px;
     color: $textbrand-color;
+  }
+
+  .page-footer__social-list {
+    order: 0;
+    margin-right: 0;
+  }
+
+  .page-footer__decor-line {
+    @include transparentize-background-color(#9b9b9b, 0.9);
+    margin: 35px 0 0;
+  }
+
+  .page-footer__copyright-text {
+    @include transparentize-color($textprimary-color, 0.5);
+    margin-top: 19px;
+    margin-right: auto;
+    margin-bottom: 19px;
   }
 }

@@ -1,13 +1,38 @@
 .pitch {
   @include h-padding;
+  padding-top: 130px;
+  text-align: center;
+  background-image: url("../img/bg-pitch-cake-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: center -40px;
+  background-size: contain;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-pitch-cake-mobile@2x.png");
+  }
+}
+
+.pitch__title-annotation {
+  margin-top: 20px;
 }
 
 .pitch__offers-list {
   @include list-reset;
+  margin-top: 20px;
+  text-align: left;
   color: $textprimary-color;
 }
 
+.pitch__offer-item {
+  position: relative;
+  margin-top: 25px;
+  padding-left: 42px;
+}
+
 .pitch__offer-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
   fill: $brand-color;
 
   &--ingredients {
@@ -16,21 +41,85 @@
   }
 }
 
+.pitch__offer-br {
+  &--tablet {
+    display: none;
+  }
+}
+
+.pitch__button-choose {
+  margin-top: 40px;
+}
+
 @media (min-width: $tablet-width) {
   .pitch {
     @include h-padding($tablet-padding);
-    max-width: $desktop-width;
+    display: flex;
+    flex-direction: column;
+    padding-top: 112px;
+    text-align: left;
+    background-image: url("../img/bg-pitch-cake-tablet@1x.png");
+    background-position: 100% 0;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-pitch-cake-tablet@2x.png");
+    }
+  }
+
+  .pitch__title-annotation {
+    margin-top: 30px;
+  }
+
+  .pitch__offers-list {
+    display: flex;
+    order: 1;
+    margin-top: 165px;
+  }
+
+  .pitch__offer-item {
+    margin-right: 70px;
+    padding-left: 67px;
   }
 
   .pitch__offer-icon {
     width: 55px;
     height: 55px;
   }
+
+  .pitch__button-choose {
+    margin-top: 54px;
+  }
+
+  .pitch__offer-br {
+    &--mobile {
+      display: none;
+    }
+
+    &--tablet {
+      display: inline;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
   .pitch {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
+    padding-top: 125px;
+    padding-bottom: 265px;
+    background-image: url("../img/bg-pitch-cake-desktop@1x.png");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-pitch-cake-desktop@2x.png");
+    }
+  }
+
+  .pitch__offers-list {
+    margin-top: 145px;
+  }
+
+  .pitch__button-choose {
+    margin-top: 58px;
   }
 }

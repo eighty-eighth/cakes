@@ -19,6 +19,10 @@
   color: transparentize($color, $transparent);
 }
 
+@mixin transparentize-background-color($color, $transparent) {
+  background-color: transparentize($color, $transparent);
+}
+
 @mixin h-padding($padding: $mobile-padding) {
   padding-left: $padding;
   padding-right: $padding;

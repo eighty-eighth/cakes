@@ -1,11 +1,32 @@
 .contacts {
   @include h-padding;
-  margin-top: 40px;
+  padding-top: 40px;
+  padding-bottom: 65px;
+}
+
+.contacts__title {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.contacts__tagline {
+  margin-bottom: 5px;
 }
 
 .contacts__text {
+  margin-top: 5px;
+  margin-bottom: 5px;
   line-height: 14px;
   color: $textprimary-color;
+
+  &--info {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.contacts__form {
+  margin-top: 10px;
 }
 
 .contacts__form-label {
@@ -14,6 +35,10 @@
 
 .contacts__form-input,
 .contacts__form-textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px 11px;
   font-size: 14px;
   line-height: 14px;
   font-family: "Circe", "Tahoma", sans-serif;
@@ -21,23 +46,157 @@
   border: none;
 }
 
+.contacts__form-textarea {
+  min-width: 280px;
+  min-height: 120px;
+}
+
+.contacts__form-input ~ .contacts__form-input,
+.contacts__form-input ~ .contacts__form-textarea {
+  margin-top: 10px;
+}
+
+.contacts__form-submit {
+  margin: 20px auto 0;
+}
+
+.contacts__info {
+  margin-top: 25px;
+}
+
+.contacts__social-list {
+  margin-top: 25px;
+}
+
 @media (min-width: $tablet-width) {
   .contacts {
     @include h-padding($tablet-padding);
-    max-width: $desktop-width;
-    margin-top: 45px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 45px;
+    padding-bottom: 110px;
+    background-image: url("../img/bg-contacts-strawberry-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: right -145px bottom;
+    background-size: 585px 258px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-contacts-strawberry-tablet@2x.png");
+    }
+  }
+
+  .contacts__title {
+    width: 100%;
+    margin-bottom: 0;
+    text-align: left;
+  }
+
+  .contacts__tagline {
+    width: 100%;
+    margin-bottom: 0;
+  }
+
+  .contacts__feedback {
+    width: 347px;
+  }
+
+  .contacts__text {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &--feedback {
+      width: 260px;
+    }
+
+    &--info {
+      margin-top: 18px;
+      margin-bottom: 18px;
+    }
+  }
+
+  .contacts__form-submit {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+
+  .contacts__info {
+    margin-top: 0;
+    margin-left: 66px;
+  }
+
+  .contacts__social-list {
+    margin-top: 38px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .contacts {
     @include h-padding($desktop-padding);
+    max-width: $max-width;
     margin: 0 auto;
-    margin-top: 65px;
+    padding-top: 70px;
+    padding-bottom: 297px;
+    background-image: url("../img/bg-contacts-strawberry-desktop@1x.png");
+    background-position: right -67px bottom;
+    background-size: 928px 411px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-contacts-strawberry-desktop@2x.png");
+    }
+  }
+
+  .contacts__tagline {
+    margin-top: 20px;
+  }
+
+  .contacts__feedback {
+    width: 547px;
   }
 
   .contacts__text {
+    width: auto;
     font-size: 20px;
     line-height: 24px;
+
+    &--info {
+      margin-top: 27px;
+      margin-bottom: 27px;
+    }
+  }
+
+  .contacts__form {
+    margin-top: 45px;
+  }
+
+  .contacts__form-input,
+  .contacts__form-textarea {
+    padding: 2px 1px;
+    line-height: 24px;
+  }
+
+  .contacts__form-textarea {
+    min-height: auto;
+    height: 24px;
+
+    &:focus {
+      min-height: 120px;
+    }
+  }
+
+  .contacts__form-submit {
+    margin-top: 80px;
+  }
+
+  .contacts__form-input ~ .contacts__form-input,
+  .contacts__form-input ~ .contacts__form-textarea {
+    margin-top: 35px;
+  }
+
+  .contacts__info {
+    margin-left: 82px;
+  }
+
+  .contacts__social-list {
+    margin-top: 45px;
   }
 }

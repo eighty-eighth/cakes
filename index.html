@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=devaice-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Вкусные тортики</title>
   </head>
@@ -10,7 +10,15 @@
     <header class="page-header">
       <a class="page-header__logo">Cakes</a>
       <nav class="main-nav">
-        <button class="main-nav__toogle">Открыть меню</button>
+        <button class="main-nav__toggle">
+          <svg class="main-nav__toggle-icon  main-nav__toggle-icon--open main-nav__toggle-icon--disabled" width="18" height="14">
+            <use xlink:href="img/sprite.svg#icon-nav-open">
+          </svg>
+          <svg class="main-nav__toggle-icon  main-nav__toggle-icon--close" width="18" height="14">
+            <use xlink:href="img/sprite.svg#icon-nav-close">
+          </svg>
+          Открыть меню
+        </button>
         <ul class="main-nav__menu">
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">Наши торты</a>
@@ -36,20 +44,20 @@
     </header>
     <main class="page-main">
       <section class="pitch">
-        <h1 class="pitch__title title">Торты на заказ</h1>
+        <h1 class="pitch__title title">Торты<br> на заказ</h1>
         <div class="pitch__title-annotation title-annotation title-annotation--pitch">Ручная работа</div>
         <ul class="pitch__offers-list">
           <li class="pitch__offer-item">
             <svg class="pitch__offer-icon pitch__offer-icon--ingredients" width="33" height="33">
               <use xlink:href="img/sprite.svg#icon-ingredients">
             </svg>
-            Натуральные ингредиенты
+            Натуральные<br class="pitch__offer-br pitch__offer-br--tablet"> ингредиенты
           </li>
           <li class="pitch__offer-item">
             <svg class="pitch__offer-icon" width="33" height="32">
               <use xlink:href="img/sprite.svg#icon-delivery">
             </svg>
-            Доставка бесплатно<br> при заказе
+            Доставка бесплатно<br class="pitch__offer-br pitch__offer-br--tablet"> при заказе <br class="pitch__offer-br pitch__offer-br--mobile">
             от 2000 рублей*
           </li>
         </ul>
@@ -60,7 +68,7 @@
       <section class="cakes">
         <h2 class="cakes__title subtitle">Наши торты</h2>
         <ul class="cakes__list">
-          <li class="cakes__item">
+          <li class="cakes__item cakes__item--big">
             <picture>
               <source media="(min-width: 1366px)" srcset="img/photo-cakes-classic-desktop@1x.jpg 1x, img/photo-cakes-classic-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cakes-classic-tablet@1x.jpg 1x, img/photo-cakes-classic-tablet@2x.jpg 2x">
@@ -71,8 +79,13 @@
                 <a class="cakes__tagline-link" href="#">Классические</a>
               </h3>
               <span class="cakes__description">24 вида</span>
-              <a class="cakes__item-link" href="#">Смотреть</a>
             </div>
+            <a class="cakes__item-link" href="#">Смотреть</a>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
           <li class="cakes__item">
             <picture>
@@ -86,6 +99,11 @@
               </h3>
               <span class="cakes__description">12 видов</span>
             </div>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
           <li class="cakes__item">
             <picture>
@@ -99,6 +117,11 @@
               </h3>
               <span class="cakes__description">20 видов</span>
             </div>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
         </ul>
         <ul class="cakes__list">
@@ -114,6 +137,11 @@
               </h3>
               <span class="cakes__description">12 видов</span>
             </div>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
           <li class="cakes__item">
             <picture>
@@ -127,8 +155,13 @@
               </h3>
               <span class="cakes__description">16 видов</span>
             </div>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
-          <li class="cakes__item">
+          <li class="cakes__item cakes__item--big">
             <picture>
               <source media="(min-width: 1366px)" srcset="img/photo-cakes-babes-desktop@1x.jpg 1x, img/photo-cakes-babes-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/photo-cakes-babes-tablet@1x.jpg 1x, img/photo-cakes-babes-tablet@2x.jpg 2x">
@@ -140,6 +173,11 @@
               </h3>
               <span class="cakes__description">18 вида</span>
             </div>
+            <a class="cakes__item-link cakes__item-link--arrow" href="#">
+              <svg class="cakes__item-icon" width="17" height="12">
+                <use xlink:href="img/sprite.svg#icon-arrow-link">
+              </svg>
+            </a>
           </li>
         </ul>
       </section>
@@ -150,127 +188,194 @@
         <div class="individual-order__tagline title-annotation">Соберите торт в 3 шага</div>
 
         <div class="order-step">
-          <h3 class="order-step__title">
+          <h3 class="order-step__title order-step__title--filling">
             <span class="order-step__title-number">01</span>Выберите начинку
           </h3>
-          <div class="order-step__list">
-            <ul class="toggles-list">
-              <li class="toggles-list__item">Slide 1</li>
-              <li class="toggles-list__item">Slide 2</li>
-              <li class="toggles-list__item">Slide 3</li>
-              <li class="toggles-list__item">Slide 4</li>
-              <li class="toggles-list__item">Slide 5</li>
-            </ul>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-filling-ganache-desktop@1x.jpg 1x, img/photo-filling-ganache-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-filling-ganache-tablet@1x.jpg 1x, img/photo-filling-ganache-tablet@2x.jpg 2x">
-                <img class="order-step__image order-step__image--filling" src="img/photo-filling-ganache-mobile@1x.jpg" srcset="img/photo-filling-ganache-mobile@2x.jpg 2x" alt="Шоколадный ганаш">
-              </picture>
-              <h4 class="order-step__tagline">Шоколадный ганаш</h4>
-              <p class="order-step__description">
-                Ароматный шоколадный бисквит, густой шоколадный крем &ndash;
-                самый шоколадный из всех возможных десертов!
-              </p>
-              <b class="order-step__price">1000 руб/кг</b>
-              <button class="order-step__button-choose button button--individual-order">Выбрать</button>
+          <div class="order-step__list order-step__list--filling">
+            <div class="order-step__item order-step__item--active">
+              <div class="order-step__image-wrapper">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-filling-ganache-desktop@1x.jpg 1x, img/photo-filling-ganache-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-filling-ganache-tablet@1x.jpg 1x, img/photo-filling-ganache-tablet@2x.jpg 2x">
+                  <img class="order-step__image order-step__image--filling" src="img/photo-filling-ganache-mobile@1x.jpg" srcset="img/photo-filling-ganache-mobile@2x.jpg 2x" alt="Шоколадный ганаш">
+                </picture>
+                <ul class="order-step__toggles-list toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <div class="order-step__info">
+                <h4 class="order-step__tagline order-step__tagline--filling">Шоколадный ганаш</h4>
+                <p class="order-step__description order-step__description--filling">
+                  Ароматный шоколадный бисквит, густой шоколадный крем &ndash;
+                  самый шоколадный из всех возможных десертов!
+                </p>
+                <b class="order-step__price">1000 руб/кг</b>
+                <button class="order-step__button-choose order-step__button-choose--filling button button--individual-order">Выбрать</button>
+              </div>
+            </div>
+            <div class="order-step__counter order-step__counter--filling">1/12</div>
+            <div class="order-step__controls order-step__controls--filling">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
+                <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
+              </svg>
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
+                <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
+              </svg>
             </div>
           </div>
         </div>
 
-        <div class="order-step">
-          <h3 class="order-step__title">
+        <div class="order-step order-step--size">
+          <h3 class="order-step__title order-step__title--size">
             <span class="order-step__title-number">02</span>Размер
           </h3>
-          <div class="order-step__list">
-            <ul class="toggles-list">
-              <li class="toggles-list__item">Slide 1</li>
-              <li class="toggles-list__item">Slide 2</li>
-              <li class="toggles-list__item">Slide 3</li>
-              <li class="toggles-list__item">Slide 4</li>
-            </ul>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-size-1kg-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/photo-size-1kg-tablet.png">
-                <img class="order-step__image" src="img/photo-size-1kg-mobile.png" alt="Экскиз торта весом 1кг">
-              </picture>
-              <p class="order-step__description">
+          <div class="order-step__list order-step__list--size">
+            <div class="order-step__item order-step__item--size order-step__item--active">
+              <div class="order-step__image-wrapper order-step__image-wrapper--size">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-size-1kg-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-size-1kg-tablet.png">
+                  <img class="order-step__image" src="img/photo-size-1kg-mobile.png" alt="Экскиз торта весом 1кг">
+                </picture>
+                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <p class="order-step__description order-step__description--size">
                 17-18 см<br>
                 (1кг &ndash; 6 персон)
               </p>
-              <button class="order-step__button-choose button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
             </div>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-size-2kg-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/photo-size-2kg-tablet.png">
-                <img class="order-step__image" src="img/photo-size-2kg-mobile.png" alt="Экскиз торта весом 2кг">
-              </picture>
-              <p class="order-step__description">
+            <div class="order-step__item order-step__item--size">
+              <div class="order-step__image-wrapper order-step__image-wrapper--size">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-size-2kg-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-size-2kg-tablet.png">
+                  <img class="order-step__image" src="img/photo-size-2kg-mobile.png" alt="Экскиз торта весом 2кг">
+                </picture>
+                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <p class="order-step__description order-step__description--size order-step__description--size-2kg">
                 23-24 см<br>
                 (10&ndash;12 персон)
               </p>
-              <button class="order-step__button-choose button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
             </div>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-size-5kg-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/photo-size-5kg-tablet.png">
-                <img class="order-step__image" src="img/photo-size-5kg-mobile.png" alt="Экскиз торта весом 5кг">
-              </picture>
-              <p class="order-step__description">
+            <div class="order-step__item order-step__item--size">
+              <div class="order-step__image-wrapper order-step__image-wrapper--size">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-size-5kg-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-size-5kg-tablet.png">
+                  <img class="order-step__image" src="img/photo-size-5kg-mobile.png" alt="Экскиз торта весом 5кг">
+                </picture>
+                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <p class="order-step__description order-step__description--size">
                 Два яруса 25 и 20 см<br>
                 (15&ndash;20 персон)
               </p>
-              <button class="order-step__button-choose button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
             </div>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-size-8kg-desktop.png">
-                <source media="(min-width: 768px)" srcset="img/photo-size-8kg-tablet.png">
-                <img class="order-step__image" src="img/photo-size-8kg-mobile.png" alt="Экскиз торта весом 8кг">
-              </picture>
-              <p class="order-step__description">
+            <div class="order-step__item order-step__item--size">
+              <div class="order-step__image-wrapper order-step__image-wrapper--size">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-size-8kg-desktop.png">
+                  <source media="(min-width: 768px)" srcset="img/photo-size-8kg-tablet.png">
+                  <img class="order-step__image" src="img/photo-size-8kg-mobile.png" alt="Экскиз торта весом 8кг">
+                </picture>
+                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <p class="order-step__description order-step__description--size">
                 Три яруса 30,25 и 18 см<br>
                 (25&ndash;30 персон)
               </p>
-              <button class="order-step__button-choose button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
             </div>
           </div>
         </div>
 
-        <div class="order-step">
-          <h3 class="order-step__title">
+        <div class="order-step order-step--decor">
+          <h3 class="order-step__title order-step__title--decor">
             <span class="order-step__title-number">03</span>Оформление
           </h3>
-          <div class="order-step__list">
-            <ul class="toggles-list">
-              <li class="toggles-list__item">Slide 1</li>
-              <li class="toggles-list__item">Slide 2</li>
-              <li class="toggles-list__item">Slide 3</li>
-              <li class="toggles-list__item">Slide 4</li>
-              <li class="toggles-list__item">Slide 5</li>
-            </ul>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-design-assorted-desktop@1x.jpg 1x, img/photo-design-assorted-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-design-assorted-tablet@1x.jpg 1x, img/photo-design-assorted-tablet@2x.jpg 2x">
-                <img class="order-step__image" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
-              </picture>
-              <h4 class="order-step__tagline order-step__tagline--decor">Ягодное ассорти</h4>
-              <b class="order-step__price">700 руб/кг</b>
-              <button class="order-slider__button-choose button">Выбрать</button>
+          <div class="order-step__list order-step__list--decor">
+            <div class="order-step__item order-step__item--decor order-step__item--active">
+              <div class="order-step__image-wrapper order-step__image-wrapper--decor">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-design-assorted-desktop@1x.jpg 1x, img/photo-design-assorted-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-design-assorted-tablet@1x.jpg 1x, img/photo-design-assorted-tablet@2x.jpg 2x">
+                  <img class="order-step__image" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
+                </picture>
+                <ul class="order-step__toggles-list toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <div class="order-step__info order-step__info--decor">
+                <h4 class="order-step__tagline order-step__tagline--decor">Ягодное ассорти</h4>
+                <b class="order-step__price order-step__price--decor">700 руб/кг</b>
+                <button class="order-step__button-choose order-step__button-choose--decor button">Выбрать</button>
+              </div>
             </div>
-            <div class="order-step__item">
-              <picture>
-                <source media="(min-width: 1366px)" srcset="img/photo-design-marshmallow-desktop@1x.jpg 1x, img/photo-design-marshmallow-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-marshmallow-assorted-tablet@1x.jpg 1x, img/photo-design-marshmallow-tablet@2x.jpg 2x">
-                <img class="order-step__image" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
-              </picture>
-              <h4 class="order-step__tagline order-step__tagline--decor">Маршмэллоу</h4>
-              <b class="order-step__price">600 руб/кг</b>
-              <button class="order-step__button-choose button">Выбрать</button>
+            <div class="order-step__item order-step__item--decor">
+              <div class="order-step__image-wrapper order-step__image-wrapper--decor">
+                <picture>
+                  <source media="(min-width: 1366px)" srcset="img/photo-design-marshmallow-desktop@1x.jpg 1x, img/photo-design-marshmallow-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-marshmallow-assorted-tablet@1x.jpg 1x, img/photo-design-marshmallow-tablet@2x.jpg 2x">
+                  <img class="order-step__image" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
+                </picture>
+                <ul class="order-step__toggles-list toggles-list">
+                  <li class="toggles-list__item">Slide 1</li>
+                  <li class="toggles-list__item">Slide 2</li>
+                  <li class="toggles-list__item">Slide 3</li>
+                  <li class="toggles-list__item">Slide 4</li>
+                  <li class="toggles-list__item">Slide 5</li>
+                </ul>
+              </div>
+              <div class="order-step__info order-step__info--decor">
+                <h4 class="order-step__tagline order-step__tagline--decor">Маршмэллоу</h4>
+                <b class="order-step__price order-step__price--decor">600 руб/кг</b>
+                <button class="order-step__button-choose order-step__button-choose--decor button">Выбрать</button>
+              </div>
+            </div>
+            <div class="order-step__counter order-step__counter--decor">1/35</div>
+            <div class="order-step__controls order-step__controls--decor">
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
+                <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
+              </svg>
+              <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
+                <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
+              </svg>
             </div>
           </div>
         </div>
@@ -278,18 +383,20 @@
         <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
           <h3 class="individual-order-form__title">Ваш выбор</h3>
           <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Начинка</label>
-            <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Начинка</label>
+              <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+            </div>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Размер</label>
+              <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
+            </div>
+            <div class="individual-order-form__item">
+              <label class="individual-order-form__label">Оформление</label>
+              <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
+            </div>
+            <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
           </div>
-          <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Размер</label>
-            <input class="individual-order-form__input" type="text" value="1 кг" disabled>
-          </div>
-          <div class="individual-order-form__group">
-            <label class="individual-order-form__label">Оформление</label>
-            <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
-          </div>
-          <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
         </form>
 
       </section>
@@ -298,52 +405,70 @@
       <section class="reviews">
         <h2 class="reviews__title subtitle subtitle--reviews">Отзывы</h2>
         <article class="reviews-item">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="img/photo-review-maria-desktop.png">
-            <source media="(min-width: 768px)" srcset="img/photo-review-maria-tablet.png">
-            <img class="reviews-item__image" src="img/photo-review-maria-mobile.png" alt="Фотография клиента">
-          </picture>
-          <h1 class="reviews-item__user-name">Мария</h1>
-          <div class="reviews-item__user-info">юрист, 33 года</div>
-          <blockquote class="reviews-item__comment">
-            Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
-            доставку! Теперь будем заказывать торты только у вас для наших семейных праздников :)
-            <a class="reviews-item__link" href="#">Развернуть</a>
-          </blockquote>
-          <div class="reviews-item__counter">1/26</div>
+          <div class="review-item__image-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/photo-review-maria-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/photo-review-maria-tablet.png">
+              <img class="reviews-item__image" src="img/photo-review-maria-mobile.png" alt="Фотография клиента">
+            </picture>
+          </div>
+          <div class="review-item__info">
+            <h1 class="reviews-item__user-name">Мария</h1>
+            <div class="reviews-item__user-info">юрист, 33 года</div>
+            <blockquote class="reviews-item__comment">
+              Заказывала торт брауни на юбилей мужа. Гости были в восторге! Отдельное спасибо за своевременную
+              доставку! Теперь будем заказывать торты только у вас для наших семейных праздников :)
+              <a class="reviews-item__link" href="#">Развернуть</a>
+            </blockquote>
+          </div>
         </article>
-        <ul class="toggles-list">
+        <ul class="reviews__toggles-list toggles-list">
           <li class="toggles-list__item">Slide 1</li>
           <li class="toggles-list__item">Slide 2</li>
           <li class="toggles-list__item">Slide 3</li>
           <li class="toggles-list__item">Slide 4</li>
           <li class="toggles-list__item">Slide 5</li>
         </ul>
+        <div class="reviews__counter">1/26</div>
+        <div class="reviews__controls">
+          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
+          </svg>
+          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+            <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
+          </svg>
+        </div>
       </section>
 
 
       <section class="about-us">
         <h2 class="about-us__title subtitle subtitle--about-us">О нас</h2>
         <article class="about-us-worker">
-          <picture>
-            <source media="(min-width: 1366px)" srcset="img/photo-about-pavel-desktop@1x.png 1x, img/photo-about-pavel-desktop@2x.png 2x">
-            <source media="(min-width: 768px)" srcset="img/photo-about-pavel-tablet@1x.png 1x, img/photo-about-pavel-tablet@2x.png 2x">
-            <img class="about-us-worker__image" src="img/photo-about-pavel-mobile@1x.png" srcset="img/photo-about-pavel-mobile@2x.png 2x" alt="Фотография сотрудника">
-          </picture>
+          <div class="about-us-worker__image-wrapper">
+            <picture>
+              <source media="(min-width: 1366px)" srcset="img/photo-about-pavel-desktop@1x.png 1x, img/photo-about-pavel-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-about-pavel-tablet@1x.png 1x, img/photo-about-pavel-tablet@2x.png 2x">
+              <img class="about-us-worker__image" src="img/photo-about-pavel-mobile@1x.png" srcset="img/photo-about-pavel-mobile@2x.png 2x" alt="Фотография сотрудника">
+            </picture>
+          </div>
           <div class="about-us-worker__description">
             <h1 class="about-us-worker__title title-annotation">О кандитере</h1>
-            <h2 class="about-us-worker__subtitle">Кондитер &ndash; как призвание</h2>
-            <p class="about-us-worker__text">
-              Павел &mdash; профессиональный повар в различных гастрономических областях, но однажды его
-              сердце покорило кондитерское искусство.<br>
-              С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
-            </p>
-            <h2 class="about-us-worker__subtitle">Принцип &ndash; натуральные ингредиенты</h2>
-            <p class="about-us-worker__text">
-              Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную
-              продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
-            </p>
-            <ul class="social-list">
+            <div class="about-us-worker__paragraph">
+              <h2 class="about-us-worker__subtitle">Кондитер &ndash; как призвание</h2>
+              <p class="about-us-worker__text">
+                Павел &mdash; профессиональный повар в различных гастрономических областях, но однажды его
+                сердце покорило кондитерское искусство.<br>
+                С ранних лет он увлекался утонченным мастерством и обратился к своим талантам как кондитер.
+              </p>
+            </div>
+            <div class="about-us-worker__paragraph">
+              <h2 class="about-us-worker__subtitle">Принцип &ndash; натуральные ингредиенты</h2>
+              <p class="about-us-worker__text">
+                Сегодня Павел радует изделиями не только близких, но и тех, кто предпочитает качественную
+                продукцию для торжества, а главным принципом является выбор натуральных ингредиентов.
+              </p>
+            </div>
+            <ul class="about-us-worker__social-list social-list">
               <li class="social-list__item">
                 <a class="social-list__link" href="#">
                   <svg class="social-list__icon" width="18" height="18">
@@ -415,6 +540,7 @@
           <li class="how-to-order__item">
             <h3 class="how-to-order__tagline">Срок заказа</h3>
             <p class="how-to-order__text">
+              <span class="how-to-order__text-point how-to-order__text-point--number-first">1</span>
               Размещать заказы желательно за 2-3 дня. На выходные заказы лучше
               размещать минимум за неделю.
             </p>
@@ -422,6 +548,7 @@
           <li class="how-to-order__item">
             <h3 class="how-to-order__tagline">Доставка по городу</h3>
             <p class="how-to-order__text">
+              <span class="how-to-order__text-point">2</span>
               Доставка в пределах города 200 рублей, при заказе на сумму более 2000
               доставка бесплатно.
             </p>
@@ -429,6 +556,7 @@
           <li class="how-to-order__item">
             <h3 class="how-to-order__tagline">Доставка за городом</h3>
             <p class="how-to-order__text">
+              <span class="how-to-order__text-point how-to-order__text-point--number-three">3</span>
               Доставка за пределами города рассчитывается индивидуально.
             </p>
           </li>
@@ -439,28 +567,32 @@
       <section class="contacts">
         <h2 class="contacts__title subtitle subtitle--contacts">Контакты</h2>
         <div class="contacts__tagline title-annotation title-annotation--contacts">Остались вопросы?</div>
-        <p class="contacts__text">
-          Заполните форму ниже и наш кондитер свяжется с Вами
-        </p>
-        <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="contacts__form-label">Ваше имя:</label>
-          <input class="contacts__form-input" type="text" placeholder="Ваше имя">
-          <label class="contacts__form-label">Email адрес:</label>
-          <input class="contacts__form-input" type="text" placeholder="Email адрес">
-          <label class="contacts__form-label">Ваш вопрос:</label>
-          <textarea class="contacts__form-textarea" placeholder="Ваш вопрос"></textarea>
-          <button class="contacts__form-submit button button--contacts" type="submit">Отправить</button>
-        </form>
+        <div class="contacts__feedback">
+          <p class="contacts__text contacts__text--feedback">
+            Заполните форму ниже и наш кондитер свяжется с Вами
+          </p>
+          <form class="contacts__form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="contacts__form-label">Ваше имя:</label>
+            <input class="contacts__form-input" type="text" placeholder="Ваше имя">
+            <label class="contacts__form-label">Email адрес:</label>
+            <input class="contacts__form-input" type="text" placeholder="Email адрес">
+            <label class="contacts__form-label">Ваш вопрос:</label>
+            <textarea class="contacts__form-textarea" placeholder="Ваш вопрос" rows="6"></textarea>
+            <button class="contacts__form-submit button button--contacts" type="submit">Отправить</button>
+          </form>
+        </div>
         <div class="contacts__info">
-          <p class="contacts__text">
-            Или позвоните по телефону:
+          <p class="contacts__text contacts__text--info">
+            Или позвоните по телефону: <br>
             +7 906 899 92 96
-            <br><br>
+          </p>
+          <p class="contacts__text contacts__text--info">
             Наша почта: bakerybypavel@mail.ru
-            <br><br>
+          </p>
+          <p class="contacts__text contacts__text--info">
             Мы в соц. сетях:
           </p>
-          <ul class="social-list">
+          <ul class="contacts__social-list social-list">
             <li class="social-list__item">
               <a class="social-list__link" href="#">
                 <svg class="social-list__icon social-list__icon--big-inst" width="32" height="32">
@@ -483,7 +615,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">Cakes</a>
-      <nav class="footer-nav">
+      <nav class="page-footer__nav footer-nav">
         <ul class="footer-nav__menu">
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Наши торты</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Индивидуальный заказ</a></li>
@@ -491,10 +623,10 @@
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">О нас</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Как заказать</a></li>
           <li class="footer-nav__item"><a class="footer-nav__link" href="#">Контакты</a></li>
-          <li class="footer-nav__item"><a class="footer-nav__link" href="#">+7 906 899 92 96</a></li>
+          <li class="footer-nav__item footer-nav__item--mobile-tel"><a class="footer-nav__link" href="#">+7 906 899 92 96</a></li>
         </ul>
       </nav>
-      <ul class="social-list">
+      <ul class="page-footer__social-list social-list">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
             <svg class="social-list__icon social-list__icon--footer" width="23" height="23">
@@ -510,9 +642,9 @@
             Мы в Вконтакте</a>
         </li>
       </ul>
-      <section class="copyright">
-        <p class="copyright__text">© 2018 Cakes</p>
-      </section>
+      <hr class="page-footer__decor-line">
+      <p class="page-footer__copyright-text">© 2018 Cakes</p>
     </footer>
+    <script src="js/toggle-nav.min.js"></script>
   </body>
 </html>
