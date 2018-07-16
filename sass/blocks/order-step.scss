@@ -61,14 +61,21 @@
 
 .order-step__image-wrapper {
   position: relative;
-  margin-bottom: 38px;
+  margin: 0 auto;
   line-height: 0;
 
+  &--filling {
+    height: 113px;
+    margin-bottom: 38px;
+  }
+
   &--size {
+    height: 110px;
     margin-bottom: 68px;
   }
 
   &--decor {
+    height: 196px;
     margin-bottom: 35px;
   }
 }
@@ -83,12 +90,19 @@
 
 .order-step__toggles-list {
   position: absolute;
-  bottom: -18px;
   justify-content: center;
   width: 100%;
 
+  &--filling {
+    top: 131px;
+  }
+
   &--size {
-    bottom: -53px;
+    top: 163px;
+  }
+
+  &--decor {
+    top: 214px;
   }
 }
 
@@ -263,6 +277,7 @@
   .order-step__image-wrapper {
     position: static;
     flex-shrink: 0;
+    height: auto;
     margin-bottom: 0;
   }
 

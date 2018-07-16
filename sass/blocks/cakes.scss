@@ -171,4 +171,12 @@
       line-height: 0;
     }
   }
+
+  .cakes__item-icon {
+    fill: #757575;
+
+    &:hover {
+      fill: #c49ea9;
+    }
+  }
 }
