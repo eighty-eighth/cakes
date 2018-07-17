@@ -1,6 +1,10 @@
 .order-step {
   padding: 5px 20px 25px;
   background-color: $white;
+
+  &--decor {
+    padding-bottom: 34px;
+  }
 }
 
 .order-step + .order-step {
@@ -86,6 +90,11 @@
   &--filling {
     background-color: $bg-color;
   }
+
+  &--decor {
+    background-color: #959595;
+    box-shadow: 0 2px 4.95px 0.05px rgba(163, 6, 60, 0.1);
+  }
 }
 
 .order-step__toggles-list {
@@ -169,7 +178,7 @@
   }
 
   &--decor {
-    top: 180px;
+    top: 173px;
     left: 50%;
     color: $textorder-color;
     transform: translateX(57px);
@@ -184,7 +193,9 @@
   .order-step {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 43px 46px 57px;
+    box-shadow: 0 5px 12.74px 0.26px rgba(163, 6, 60, 0.1);
 
     &--size {
       flex-direction: column;
@@ -192,7 +203,7 @@
     }
 
     &--decor {
-      padding-bottom: 35px;
+      padding-bottom: 44px;
       background-image: url("../img/bg-design-cake-tablet@1x.png");
       background-repeat: no-repeat;
       background-position: 4px 120px;
@@ -259,10 +270,15 @@
     margin: 0;
     overflow: visible;
     transform: translateX(0);
+    cursor: pointer;
 
     &--size {
       flex-direction: column;
       text-align: left;
+
+      &:hover {
+        box-shadow: 0 6px 15.5px 0.5px rgba(103, 12, 40, 0.14);
+      }
     }
 
     &--decor {
@@ -279,6 +295,16 @@
     flex-shrink: 0;
     height: auto;
     margin-bottom: 0;
+  }
+
+  .order-step__image {
+    &--decor {
+      box-shadow: 0 7px 12.74px 0.26px rgba(0, 0, 0, 0.05);
+
+      &:hover {
+        box-shadow: 0 6px 9.7px 0.3px rgba(0, 0, 0, 0.14);
+      }
+    }
   }
 
   .order-step__info {
@@ -307,6 +333,10 @@
   }
 
   .order-step__description {
+    &--filling {
+      max-width: 190px;
+    }
+
     &--size {
       font-size: 12px;
       line-height: 20px;
@@ -375,8 +405,8 @@
 
     &--decor {
       top: 122px;
-      right: -53px;
-      left: -54px;
+      right: -70px;
+      left: -70px;
     }
   }
 }
@@ -392,7 +422,7 @@
 
     &--decor {
       padding-top: 68px;
-      padding-bottom: 35px;
+      padding-bottom: 72px;
       background-image: url("../img/bg-design-cake-desktop@1x.png");
       background-position: 17px 198px;
     }
@@ -444,6 +474,10 @@
   }
 
   .order-step__description {
+    &--filling {
+      max-width: 285px;
+    }
+
     &--size {
       font-size: 18px;
       line-height: 30px;

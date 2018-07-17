@@ -309,7 +309,7 @@
                 <picture>
                   <source media="(min-width: 1366px)" srcset="img/photo-design-assorted-desktop@1x.jpg 1x, img/photo-design-assorted-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-design-assorted-tablet@1x.jpg 1x, img/photo-design-assorted-tablet@2x.jpg 2x">
-                  <img class="order-step__image" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
+                  <img class="order-step__image order-step__image--decor" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
                 </picture>
               </div>
               <div class="order-step__info order-step__info--decor">
@@ -323,7 +323,7 @@
                 <picture>
                   <source media="(min-width: 1366px)" srcset="img/photo-design-marshmallow-desktop@1x.jpg 1x, img/photo-design-marshmallow-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-marshmallow-assorted-tablet@1x.jpg 1x, img/photo-design-marshmallow-tablet@2x.jpg 2x">
-                  <img class="order-step__image" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
+                  <img class="order-step__image order-step__image--decor" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
                 </picture>
               </div>
               <div class="order-step__info order-step__info--decor">
@@ -349,27 +349,25 @@
               </svg>
             </div>
           </div>
+          <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="individual-order-form__title">Ваш выбор</h3>
+            <div class="individual-order-form__group">
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Начинка</label>
+                <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+              </div>
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Размер</label>
+                <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
+              </div>
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Оформление</label>
+                <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
+              </div>
+              <button class="individual-order-form__button-submit button button--individual-order-form" type="submit">Заказать торт</button>
+            </div>
+          </form>
         </div>
-
-        <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="individual-order-form__title">Ваш выбор</h3>
-          <div class="individual-order-form__group">
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Начинка</label>
-              <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
-            </div>
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Размер</label>
-              <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
-            </div>
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Оформление</label>
-              <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
-            </div>
-            <button class="individual-order-form__button-submit button button--individual-order-form" type="submit">Заказать торт</button>
-          </div>
-        </form>
-
       </section>
 
 
