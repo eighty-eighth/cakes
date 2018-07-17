@@ -13,11 +13,11 @@
   cursor: pointer;
 
   &:hover {
-    box-shadow: 0 5px 13px 8px rgba(255, 0, 67, 0.3);
+    box-shadow: 0 5px 7px 1px rgba(255, 0, 67, 0.3);
   }
 
   &:active {
-    box-shadow: 0 5px 13px 8px rgba(255, 0, 67, 0.6);
+    box-shadow: 0 5px 7px 1px rgba(255, 0, 67, 0.6);
   }
 
   &--individual-order,
