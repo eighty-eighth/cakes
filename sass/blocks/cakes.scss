@@ -33,8 +33,17 @@
 
 .cakes__review {
   position: absolute;
-  top: 13px;
-  left: 13px;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  padding-top: 13px;
+  padding-left: 13px;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+  }
 }
 
 .cakes__tagline {
@@ -93,8 +102,14 @@
   }
 
   .cakes__review {
-    top: 23px;
-    left: 26px;
+    padding-top: 23px;
+    padding-left: 26px;
+    box-shadow: 0 10px 12.5px 0.5px $decor-shadow;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: 0 10px 12.5px 0.5px $decor-hover-shadow;
+    }
   }
 
   .cakes__item-link {
@@ -118,7 +133,7 @@
     @include h-padding($desktop-padding);
     max-width: $max-width;
     margin: 0 auto;
-    margin-top: 155px;
+    margin-top: -41px;
   }
 
   .cakes__title {
@@ -144,8 +159,8 @@
   }
 
   .cakes__review {
-    top: 40px;
-    left: 46px;
+    padding-top: 40px;
+    padding-left: 46px;
   }
 
   .cakes__tagline {
@@ -169,6 +184,14 @@
       right: 70px;
       bottom: 39px;
       line-height: 0;
+    }
+  }
+
+  .cakes__item-icon {
+    fill: #757575;
+
+    &:hover {
+      fill: #c49ea9;
     }
   }
 }

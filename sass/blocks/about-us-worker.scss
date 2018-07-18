@@ -32,10 +32,18 @@
   left: 197px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 155px;
   line-height: 0;
 }
 
+.about-us-worker__social-item {
+  margin-right: 15px;
+  margin-bottom: 15px;
+}
+
 .about-us-worker__blockqoute {
+  position: relative;
   min-width: 285px;
   margin: 0;
   padding-top: 73px;
@@ -49,6 +57,21 @@
   background-image: url("../img/bg-review-signature-mobile.png");
   background-repeat: no-repeat;
   background-position: center 100%;
+
+  &::before {
+    content: "”";
+    position: absolute;
+    top: 24px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto;
+    font-size: 60px;
+    line-height: 88px;
+    font-weight: 700;
+    font-family: "Playfair Display", "Georgia", serif;
+    color: #fffefe;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -76,7 +99,11 @@
   .about-us-worker__social-list {
     position: static;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 18px;
+  }
+
+  .about-us-worker__social-item {
+    margin-right: 20px;
   }
 
   .about-us-worker__blockqoute {
@@ -87,6 +114,12 @@
     font-size: 14px;
     line-height: 21px;
     background-image: url("../img/bg-review-signature-tablet.png");
+
+    &::before {
+      top: 15px;
+      font-size: 77px;
+      line-height: 112px;
+    }
   }
 }
 
@@ -110,6 +143,10 @@
     line-height: 24px;
   }
 
+  .about-us-worker__social-list {
+    margin-top: 25px;
+  }
+
   .about-us-worker__blockqoute {
     width: 700px;
     padding-top: 195px;
@@ -117,5 +154,11 @@
     font-size: 25px;
     line-height: 38px;
     background-image: url("../img/bg-review-signature-desktop.png");
+
+    &::before {
+      top: 80px;
+      font-size: 140px;
+      line-height: 204px;
+    }
   }
 }

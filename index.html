@@ -193,19 +193,12 @@
           </h3>
           <div class="order-step__list order-step__list--filling">
             <div class="order-step__item order-step__item--active">
-              <div class="order-step__image-wrapper">
+              <div class="order-step__image-wrapper order-step__image-wrapper--filling">
                 <picture>
                   <source media="(min-width: 1366px)" srcset="img/photo-filling-ganache-desktop@1x.jpg 1x, img/photo-filling-ganache-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-filling-ganache-tablet@1x.jpg 1x, img/photo-filling-ganache-tablet@2x.jpg 2x">
                   <img class="order-step__image order-step__image--filling" src="img/photo-filling-ganache-mobile@1x.jpg" srcset="img/photo-filling-ganache-mobile@2x.jpg 2x" alt="Шоколадный ганаш">
                 </picture>
-                <ul class="order-step__toggles-list toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <div class="order-step__info">
                 <h4 class="order-step__tagline order-step__tagline--filling">Шоколадный ганаш</h4>
@@ -218,6 +211,13 @@
               </div>
             </div>
             <div class="order-step__counter order-step__counter--filling">1/12</div>
+            <ul class="order-step__toggles-list order-step__toggles-list--filling toggles-list">
+              <li class="toggles-list__item toggles-list__item--active">Slide 1</li>
+              <li class="toggles-list__item">Slide 2</li>
+              <li class="toggles-list__item">Slide 3</li>
+              <li class="toggles-list__item">Slide 4</li>
+              <li class="toggles-list__item toggles-list__item--small">Slide 5</li>
+            </ul>
             <div class="order-step__controls order-step__controls--filling">
               <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
@@ -241,19 +241,12 @@
                   <source media="(min-width: 768px)" srcset="img/photo-size-1kg-tablet.png">
                   <img class="order-step__image" src="img/photo-size-1kg-mobile.png" alt="Экскиз торта весом 1кг">
                 </picture>
-                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <p class="order-step__description order-step__description--size">
                 17-18 см<br>
                 (1кг &ndash; 6 персон)
               </p>
-              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button button--individual-order">Выбрать</button>
             </div>
             <div class="order-step__item order-step__item--size">
               <div class="order-step__image-wrapper order-step__image-wrapper--size">
@@ -262,19 +255,12 @@
                   <source media="(min-width: 768px)" srcset="img/photo-size-2kg-tablet.png">
                   <img class="order-step__image" src="img/photo-size-2kg-mobile.png" alt="Экскиз торта весом 2кг">
                 </picture>
-                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <p class="order-step__description order-step__description--size order-step__description--size-2kg">
                 23-24 см<br>
                 (10&ndash;12 персон)
               </p>
-              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button button--individual-order">Выбрать</button>
             </div>
             <div class="order-step__item order-step__item--size">
               <div class="order-step__image-wrapper order-step__image-wrapper--size">
@@ -283,19 +269,12 @@
                   <source media="(min-width: 768px)" srcset="img/photo-size-5kg-tablet.png">
                   <img class="order-step__image" src="img/photo-size-5kg-mobile.png" alt="Экскиз торта весом 5кг">
                 </picture>
-                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <p class="order-step__description order-step__description--size">
                 Два яруса 25 и 20 см<br>
                 (15&ndash;20 персон)
               </p>
-              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button button--individual-order">Выбрать</button>
             </div>
             <div class="order-step__item order-step__item--size">
               <div class="order-step__image-wrapper order-step__image-wrapper--size">
@@ -304,20 +283,19 @@
                   <source media="(min-width: 768px)" srcset="img/photo-size-8kg-tablet.png">
                   <img class="order-step__image" src="img/photo-size-8kg-mobile.png" alt="Экскиз торта весом 8кг">
                 </picture>
-                <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <p class="order-step__description order-step__description--size">
                 Три яруса 30,25 и 18 см<br>
                 (25&ndash;30 персон)
               </p>
-              <button class="order-step__button-choose order-step__button-choose--size button">Выбрать</button>
+              <button class="order-step__button-choose order-step__button-choose--size button button--individual-order">Выбрать</button>
             </div>
+            <ul class="order-step__toggles-list order-step__toggles-list--size toggles-list">
+              <li class="toggles-list__item toggles-list__item--active">Slide 1</li>
+              <li class="toggles-list__item">Slide 2</li>
+              <li class="toggles-list__item">Slide 3</li>
+              <li class="toggles-list__item">Slide 4</li>
+            </ul>
           </div>
         </div>
 
@@ -331,20 +309,13 @@
                 <picture>
                   <source media="(min-width: 1366px)" srcset="img/photo-design-assorted-desktop@1x.jpg 1x, img/photo-design-assorted-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-design-assorted-tablet@1x.jpg 1x, img/photo-design-assorted-tablet@2x.jpg 2x">
-                  <img class="order-step__image" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
+                  <img class="order-step__image order-step__image--decor" src="img/photo-design-assorted-mobile@1x.jpg" srcset="img/photo-design-assorted-mobile@2x.jpg 2x" alt="Ягодное ассорти">
                 </picture>
-                <ul class="order-step__toggles-list toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <div class="order-step__info order-step__info--decor">
                 <h4 class="order-step__tagline order-step__tagline--decor">Ягодное ассорти</h4>
                 <b class="order-step__price order-step__price--decor">700 руб/кг</b>
-                <button class="order-step__button-choose order-step__button-choose--decor button">Выбрать</button>
+                <button class="order-step__button-choose order-step__button-choose--decor button button--individual-order">Выбрать</button>
               </div>
             </div>
             <div class="order-step__item order-step__item--decor">
@@ -352,23 +323,23 @@
                 <picture>
                   <source media="(min-width: 1366px)" srcset="img/photo-design-marshmallow-desktop@1x.jpg 1x, img/photo-design-marshmallow-desktop@2x.jpg 2x">
                   <source media="(min-width: 768px)" srcset="img/photo-marshmallow-assorted-tablet@1x.jpg 1x, img/photo-design-marshmallow-tablet@2x.jpg 2x">
-                  <img class="order-step__image" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
+                  <img class="order-step__image order-step__image--decor" src="img/photo-design-marshmallow-mobile@1x.jpg" srcset="img/photo-design-marshmallow-mobile@2x.jpg 2x" alt="Фото Маршмэллоу">
                 </picture>
-                <ul class="order-step__toggles-list toggles-list">
-                  <li class="toggles-list__item">Slide 1</li>
-                  <li class="toggles-list__item">Slide 2</li>
-                  <li class="toggles-list__item">Slide 3</li>
-                  <li class="toggles-list__item">Slide 4</li>
-                  <li class="toggles-list__item">Slide 5</li>
-                </ul>
               </div>
               <div class="order-step__info order-step__info--decor">
                 <h4 class="order-step__tagline order-step__tagline--decor">Маршмэллоу</h4>
                 <b class="order-step__price order-step__price--decor">600 руб/кг</b>
-                <button class="order-step__button-choose order-step__button-choose--decor button">Выбрать</button>
+                <button class="order-step__button-choose order-step__button-choose--decor button button--individual-order">Выбрать</button>
               </div>
             </div>
             <div class="order-step__counter order-step__counter--decor">1/35</div>
+            <ul class="order-step__toggles-list order-step__toggles-list--decor toggles-list">
+              <li class="toggles-list__item toggles-list__item--active">Slide 1</li>
+              <li class="toggles-list__item">Slide 2</li>
+              <li class="toggles-list__item">Slide 3</li>
+              <li class="toggles-list__item">Slide 4</li>
+              <li class="toggles-list__item toggles-list__item--small">Slide 5</li>
+            </ul>
             <div class="order-step__controls order-step__controls--decor">
               <svg class="order-step__controls-arrow controls-arrow" width="9" height="16">
                 <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
@@ -378,27 +349,25 @@
               </svg>
             </div>
           </div>
+          <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
+            <h3 class="individual-order-form__title">Ваш выбор</h3>
+            <div class="individual-order-form__group">
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Начинка</label>
+                <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
+              </div>
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Размер</label>
+                <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
+              </div>
+              <div class="individual-order-form__item">
+                <label class="individual-order-form__label">Оформление</label>
+                <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
+              </div>
+              <button class="individual-order-form__button-submit button button--individual-order-form" type="submit">Заказать торт</button>
+            </div>
+          </form>
         </div>
-
-        <form class="individual-order-form" action="https://echo.htmlacademy.ru" method="post">
-          <h3 class="individual-order-form__title">Ваш выбор</h3>
-          <div class="individual-order-form__group">
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Начинка</label>
-              <input class="individual-order-form__input" type="text" value="Шоколадный ганаш" disabled>
-            </div>
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Размер</label>
-              <input class="individual-order-form__input individual-order-form__input--size" type="text" value="1 кг" width="auto" disabled>
-            </div>
-            <div class="individual-order-form__item">
-              <label class="individual-order-form__label">Оформление</label>
-              <input class="individual-order-form__input" type="text" value="Маршмэллоу" disabled>
-            </div>
-            <button class="individual-order-form__button-submit button button--individual-order" type="submit">Заказать торт</button>
-          </div>
-        </form>
-
       </section>
 
 
@@ -422,19 +391,19 @@
             </blockquote>
           </div>
         </article>
-        <ul class="reviews__toggles-list toggles-list">
-          <li class="toggles-list__item">Slide 1</li>
-          <li class="toggles-list__item">Slide 2</li>
-          <li class="toggles-list__item">Slide 3</li>
-          <li class="toggles-list__item">Slide 4</li>
-          <li class="toggles-list__item">Slide 5</li>
-        </ul>
         <div class="reviews__counter">1/26</div>
+        <ul class="reviews__toggles-list toggles-list">
+          <li class="toggles-list__item toggles-list__item--reviews toggles-list__item--active">Slide 1</li>
+          <li class="toggles-list__item toggles-list__item--reviews">Slide 2</li>
+          <li class="toggles-list__item toggles-list__item--reviews">Slide 3</li>
+          <li class="toggles-list__item toggles-list__item--reviews">Slide 4</li>
+          <li class="toggles-list__item toggles-list__item--reviews toggles-list__item--small">Slide 5</li>
+        </ul>
         <div class="reviews__controls">
-          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+          <svg class="reviews__controls-arrow controls-arrow controls-arrow--reviews" width="9" height="16">
             <use xlink:href="img/sprite.svg#icon-arrow-left">Предыдущий
           </svg>
-          <svg class="reviews__controls-arrow controls-arrow" width="9" height="16">
+          <svg class="reviews__controls-arrow controls-arrow controls-arrow--reviews" width="9" height="16">
             <use xlink:href="img/sprite.svg#icon-arrow-right">Следующий
           </svg>
         </div>
@@ -469,21 +438,21 @@
               </p>
             </div>
             <ul class="about-us-worker__social-list social-list">
-              <li class="social-list__item">
+              <li class="about-us-worker__social-item social-list__item">
                 <a class="social-list__link" href="#">
                   <svg class="social-list__icon" width="18" height="18">
                     <use xlink:href="img/sprite.svg#icon-social-inst">
                   </svg>
                   Я в Инстаграме</a>
               </li>
-              <li class="social-list__item">
+              <li class="about-us-worker__social-item social-list__item">
                 <a class="social-list__link" href="#">
                   <svg class="social-list__icon" width="25" height="17">
                     <use xlink:href="img/sprite.svg#icon-social-vk">
                   </svg>
                   Я в Вконтакте</a>
               </li>
-              <li class="social-list__item">
+              <li class="about-us-worker__social-item social-list__item">
                 <a class="social-list__link" href="#">
                   <svg class="social-list__icon" width="19" height="16">
                     <use xlink:href="img/sprite.svg#icon-social-tw">
@@ -593,15 +562,15 @@
             Мы в соц. сетях:
           </p>
           <ul class="contacts__social-list social-list">
-            <li class="social-list__item">
-              <a class="social-list__link" href="#">
+            <li class="contacts__social-item social-list__item">
+              <a class="social-list__link social-list__link--big-bg" href="#">
                 <svg class="social-list__icon social-list__icon--big-inst" width="32" height="32">
                   <use xlink:href="img/sprite.svg#icon-social-inst">
                 </svg>
                 Мы в Инстаграме</a>
             </li>
-            <li class="social-list__item">
-              <a class="social-list__link" href="#">
+            <li class="contacts__social-item social-list__item">
+              <a class="social-list__link social-list__link--big-bg" href="#">
                 <svg class="social-list__icon social-list__icon--big-vk" width="42" height="26">
                   <use xlink:href="img/sprite.svg#icon-social-vk">
                 </svg>
@@ -626,17 +595,17 @@
           <li class="footer-nav__item footer-nav__item--mobile-tel"><a class="footer-nav__link" href="#">+7 906 899 92 96</a></li>
         </ul>
       </nav>
-      <ul class="page-footer__social-list social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon social-list__icon--footer" width="23" height="23">
+      <ul class="page-footer__social-list">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#">
+            <svg class="page-footer__social-icon" width="23" height="23">
               <use xlink:href="img/sprite.svg#icon-social-inst">
             </svg>
             Мы в Инстаграме</a>
         </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <svg class="social-list__icon social-list__icon--footer" width="31" height="19">
+        <li class="page-footer__social-item">
+          <a class="page-footer__social-link" href="#">
+            <svg class="page-footer__social-icon" width="31" height="19">
               <use xlink:href="img/sprite.svg#icon-social-vk">
             </svg>
             Мы в Вконтакте</a>

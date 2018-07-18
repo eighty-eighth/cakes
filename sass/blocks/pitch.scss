@@ -56,6 +56,7 @@
     @include h-padding($tablet-padding);
     display: flex;
     flex-direction: column;
+    align-items: flex-start;
     padding-top: 112px;
     text-align: left;
     background-image: url("../img/bg-pitch-cake-tablet@1x.png");

@@ -1,3 +1,33 @@
 .controls-arrow {
+  padding: 12px 15px 12px 15px;
+  border-radius: 50%;
+  box-shadow: 0 2px 2px 1px rgba(241, 241, 241, 0.6);
   fill: $decor-arrow;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+  }
+
+  &--reviews {
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.16);
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .controls-arrow {
+    padding: 0;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:hover {
+      background-color: transparent;
+      box-shadow: none;
+    }
+  }
 }

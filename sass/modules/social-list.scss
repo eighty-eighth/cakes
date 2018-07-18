@@ -1,19 +1,37 @@
 .social-list {
   @include list-reset;
-  display: flex;
   font-size: 0;
   line-height: 0;
 }
 
+.social-list__link {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  background-color: $white;
+  border-radius: 50%;
+
+  &--big-bg {
+    width: 63px;
+    height: 63px;
+  }
+
+  &:hover {
+    box-shadow: 0 2px 7px 1px $decor-hover-social-link;
+  }
+}
+
 .social-list__icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   fill: $brand-color;
   stroke-width: 8px;
   stroke: #f50049;
-
-  &--footer {
-    fill: rgba(255, 255, 255, 0.4);
-    stroke: rgba(255, 255, 255, 0.4);
-  }
 }
 
 @media (min-width: $desktop-width) {
@@ -26,11 +44,6 @@
     &--big-vk {
       width: 41px;
       height: 29px;
-    }
-
-    &--footer {
-      fill: rgba(0, 0, 0, 0.4);
-      stroke: rgba(0, 0, 0, 0.4);
     }
   }
 }

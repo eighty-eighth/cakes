@@ -1,6 +1,7 @@
 .toggles-list {
   @include list-reset;
   display: flex;
+  align-items: center;
 }
 
 .toggles-list__item {
@@ -10,6 +11,22 @@
   font-size: 0;
   background-color: $bgtoggle-color;
   border-radius: 50%;
+  cursor: pointer;
+
+  &--reviews {
+    background-color: $white;
+  }
+
+  &--active {
+    width: 8px;
+    height: 8px;
+    background-color: $brand-color;
+  }
+
+  &--small {
+    width: 4px;
+    height: 4px;
+  }
 }
 
 @media (min-width: $tablet-width) {

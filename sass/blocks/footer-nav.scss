@@ -10,6 +10,14 @@
   font-family: "Roboto", "Tahoma", sans-serif;
   text-decoration: none;
   color: $textsecondary-color;
+
+  &:hover {
+    color: $linkhover-color;
+  }
+
+  &:active {
+    color: $linkactive-color;
+  }
 }
 
 @media (min-width: $tablet-width) {
