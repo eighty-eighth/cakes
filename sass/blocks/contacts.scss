@@ -45,6 +45,7 @@
   font-family: "Circe", "Tahoma", sans-serif;
   color: $textbrand-color;
   border: none;
+  border-radius: 3px;
 }
 
 .contacts__form-textarea {
@@ -149,7 +150,7 @@
     max-width: $max-width;
     margin: 0 auto;
     padding-top: 70px;
-    padding-bottom: 297px;
+    padding-bottom: 0;
     background-image: url("../img/bg-contacts-strawberry-desktop@1x.png");
     background-position: right -67px bottom;
     background-size: 928px 411px;
@@ -186,6 +187,8 @@
   .contacts__form-textarea {
     padding: 2px 1px;
     line-height: 24px;
+    background-color: transparent;
+    border-bottom: 1px solid rgba(167, 157, 156, 0.2);
   }
 
   .contacts__form-textarea {
@@ -207,6 +210,7 @@
   }
 
   .contacts__info {
+    margin-bottom: 411px;
     margin-left: 82px;
   }
 

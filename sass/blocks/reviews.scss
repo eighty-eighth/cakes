@@ -34,6 +34,7 @@
 @media (min-width: $tablet-width) {
   .reviews {
     @include h-padding($tablet-padding);
+    background: url("../img/decor-flags-left-tablet.png") 0 0 no-repeat, url("../img/decor-flags-right-tablet.png") 100% 0 no-repeat;
   }
 
   .reviews__title {
@@ -63,6 +64,7 @@
     max-width: $max-width;
     margin: 0 auto;
     padding-top: 100px;
+    background: url("../img/decor-flags-left-desktop.png") 0 0 no-repeat, url("../img/decor-flags-right-desktop.png") 100% 0 no-repeat;
   }
 
   .reviews__title {
